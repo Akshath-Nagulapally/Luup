@@ -248,6 +248,7 @@ export default {
   'editor.sidebarBlock.openai.label': 'OpenAI',
   'editor.sidebarBlock.pixel.label': 'Pixel',
   'editor.sidebarBlock.zemanticAi.label': 'Zemantic AI',
+  'editor.sidebarBlock.flowwise.label': 'Flow Wise',
   'editor.blockCard.bubbleBlock.tooltip.label':
     'Embed a pdf, an iframe, a website...',
   'editor.blockCard.inputBlock.tooltip.files.label': 'Upload Files',

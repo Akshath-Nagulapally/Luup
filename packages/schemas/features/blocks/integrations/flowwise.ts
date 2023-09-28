@@ -3,9 +3,9 @@ import { blockBaseSchema } from '../baseSchemas'
 import { IntegrationBlockType } from './enums'
 import { webhookOptionsSchema } from './webhook/schemas'
 
-export const zapierBlockSchema = blockBaseSchema.merge(
+export const flowwiseBlockSchema = blockBaseSchema.merge(
   z.object({
-    type: z.enum([IntegrationBlockType.ZAPIER]),
+    type: z.enum([IntegrationBlockType.FLOWWISE]),
     options: webhookOptionsSchema,
     webhookId: z
       .string()
@@ -13,6 +13,4 @@ export const zapierBlockSchema = blockBaseSchema.merge(
       .optional(),
   })
 )
-
-
-export type ZapierBlock = z.infer<typeof zapierBlockSchema>
+export type FlowwiseBlock = z.infer<typeof flowwiseBlockSchema>

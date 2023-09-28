@@ -86,5 +86,7 @@ export const BlockLabel = ({ type }: Props): JSX.Element => {
       return <Text fontSize="sm">{scopedT('pixel.label')}</Text>
     case IntegrationBlockType.ZEMANTIC_AI:
       return <Text fontSize="sm">{scopedT('zemanticAi.label')}</Text>
+    case IntegrationBlockType.FLOWWISE:
+        return <Text fontSize="sm">{scopedT('flowwise.label')}</Text>   
   }
 }

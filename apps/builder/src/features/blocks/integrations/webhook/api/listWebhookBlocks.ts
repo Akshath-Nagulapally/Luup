@@ -34,6 +34,7 @@ export const listWebhookBlocks = authenticatedProcedure
             IntegrationBlockType.ZAPIER,
             IntegrationBlockType.MAKE_COM,
             IntegrationBlockType.PABBLY_CONNECT,
+            IntegrationBlockType.FLOWWISE,
           ]),
           label: z.string(),
           url: z.string().optional(),
@@ -62,6 +63,7 @@ export const listWebhookBlocks = authenticatedProcedure
           | IntegrationBlockType.ZAPIER
           | IntegrationBlockType.MAKE_COM
           | IntegrationBlockType.PABBLY_CONNECT
+          | IntegrationBlockType.FLOWWISE
       }[]
     >((webhookBlocks, group) => {
       const blocks = group.blocks.filter(isWebhookBlock)

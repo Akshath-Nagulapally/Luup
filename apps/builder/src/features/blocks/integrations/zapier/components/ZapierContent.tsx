@@ -7,6 +7,7 @@ type Props = {
 }
 
 export const ZapierContent = ({ block }: Props) => {
+  console.log("blockccc zapier",block);
   const webhook = block.options.webhook
 
   if (isNotDefined(webhook?.body))

@@ -256,6 +256,7 @@ export default {
   'editor.sidebarBlock.openai.label': 'OpenAI',
   'editor.sidebarBlock.pixel.label': 'Pixel',
   'editor.sidebarBlock.zemanticAi.label': 'Zemantic AI',
+  'editor.sidebarBlock.flowwise.label': 'Flow Wise',
   'editor.blockCard.bubbleBlock.tooltip.label':
     'Incorporar pdf, iframe, website...',
   'editor.blockCard.inputBlock.tooltip.files.label': 'Carregar Ficheiros',
