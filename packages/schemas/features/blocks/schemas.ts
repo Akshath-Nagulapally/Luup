@@ -35,6 +35,7 @@ import {
   sendEmailBlockSchema,
   webhookBlockSchema,
   zapierBlockSchema,
+  flowwiseBlockSchema
 } from './integrations'
 import { openAIBlockSchema } from './integrations/openai'
 import {
@@ -48,8 +49,8 @@ import {
 import { jumpBlockSchema } from './logic/jump'
 import { pictureChoiceBlockSchema } from './inputs/pictureChoice'
 import { Item } from '../items'
-import { zemanticAiBlockSchema } from './integrations/zemanticAi'
-
+import { zemanticAiBlockSchema } from './integrations/zemanticAi';
+// import { flowwiseBlockSchema } from "./integrations/flowwise";
 export type DraggableBlock =
   | BubbleBlock
   | InputBlock
@@ -129,6 +130,7 @@ export const blockSchema = z.discriminatedUnion('type', [
   zapierBlockSchema,
   pixelBlockSchema,
   zemanticAiBlockSchema,
+  flowwiseBlockSchema,
 ])
 
 export type Block = z.infer<typeof blockSchema>

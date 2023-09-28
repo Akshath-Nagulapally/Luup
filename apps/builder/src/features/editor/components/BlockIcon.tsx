@@ -41,7 +41,7 @@ import { AbTestIcon } from '@/features/blocks/logic/abTest/components/AbTestIcon
 import { PictureChoiceIcon } from '@/features/blocks/inputs/pictureChoice/components/PictureChoiceIcon'
 import { PixelLogo } from '@/features/blocks/integrations/pixel/components/PixelLogo'
 import { ZemanticAiLogo } from '@/features/blocks/integrations/zemanticAi/ZemanticAiLogo'
-
+import { FlowwiseLogo  } from "@/features/blocks/integrations/flowwise/components/FlowwiseLogo";
 type BlockIconProps = { type: BlockType } & IconProps
 
 export const BlockIcon = ({ type, ...props }: BlockIconProps): JSX.Element => {
@@ -121,6 +121,8 @@ export const BlockIcon = ({ type, ...props }: BlockIconProps): JSX.Element => {
       return <PixelLogo {...props} />
     case IntegrationBlockType.ZEMANTIC_AI:
       return <ZemanticAiLogo {...props} />
+    case IntegrationBlockType.FLOWWISE:
+      return <FlowwiseLogo {...props}/>  
     case 'start':
       return <FlagIcon {...props} />
   }

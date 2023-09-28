@@ -27,6 +27,7 @@ export const executeIntegration =
         return executeSendEmailBlock(state, block)
       case IntegrationBlockType.WEBHOOK:
       case IntegrationBlockType.ZAPIER:
+      case IntegrationBlockType.FLOWWISE: 
       case IntegrationBlockType.MAKE_COM:
       case IntegrationBlockType.PABBLY_CONNECT:
         return executeWebhookBlock(state, block)

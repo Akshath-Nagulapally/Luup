@@ -6,6 +6,7 @@ import {
   VariableWithUnknowValue,
   WebhookBlock,
   ZapierBlock,
+  FlowwiseBlock,
 } from '@typebot.io/schemas'
 import { SessionState } from '@typebot.io/schemas/features/chat/sessionState'
 import { ExecuteIntegrationResponse } from '../../../types'
@@ -14,7 +15,12 @@ import { updateVariablesInSession } from '../../../variables/updateVariablesInSe
 
 type Props = {
   state: SessionState
-  block: WebhookBlock | ZapierBlock | MakeComBlock | PabblyConnectBlock
+  block:
+    | WebhookBlock
+    | ZapierBlock
+    | MakeComBlock
+    | PabblyConnectBlock
+    | FlowwiseBlock
   logs?: ReplyLog[]
   response: {
     statusCode: number

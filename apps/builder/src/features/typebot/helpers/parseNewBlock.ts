@@ -135,6 +135,7 @@ const parseDefaultBlockOptions = (type: BlockWithOptionsType): BlockOptions => {
     case IntegrationBlockType.PABBLY_CONNECT:
     case IntegrationBlockType.MAKE_COM:
     case IntegrationBlockType.WEBHOOK:
+    case IntegrationBlockType.FLOWWISE:  
       return defaultWebhookOptions(createId())
     case IntegrationBlockType.EMAIL:
       return defaultSendEmailOptions

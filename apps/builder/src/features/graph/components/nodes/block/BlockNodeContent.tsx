@@ -33,6 +33,7 @@ import { PabblyConnectContent } from '@/features/blocks/integrations/pabbly/comp
 import { SendEmailContent } from '@/features/blocks/integrations/sendEmail/components/SendEmailContent'
 import { WebhookContent } from '@/features/blocks/integrations/webhook/components/WebhookContent'
 import { ZapierContent } from '@/features/blocks/integrations/zapier/components/ZapierContent'
+import { FlowwiseContent } from '@/features/blocks/integrations/flowwise/components/FlowwiseContent';
 import { RedirectNodeContent } from '@/features/blocks/logic/redirect/components/RedirectNodeContent'
 import { SetVariableContent } from '@/features/blocks/logic/setVariable/components/SetVariableContent'
 import { TypebotLinkNode } from '@/features/blocks/logic/typebotLink/components/TypebotLinkNode'
@@ -169,6 +170,9 @@ export const BlockNodeContent = ({ block, indices }: Props): JSX.Element => {
     }
     case IntegrationBlockType.ZAPIER: {
       return <ZapierContent block={block} />
+    }
+    case IntegrationBlockType.FLOWWISE: {
+      return <FlowwiseContent block={block} />
     }
     case IntegrationBlockType.PABBLY_CONNECT: {
       return <PabblyConnectContent block={block} />

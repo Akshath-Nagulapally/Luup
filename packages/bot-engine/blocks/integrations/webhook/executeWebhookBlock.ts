@@ -2,6 +2,7 @@ import {
   WebhookBlock,
   ZapierBlock,
   MakeComBlock,
+  FlowwiseBlock,
   PabblyConnectBlock,
   SessionState,
   Webhook,
@@ -31,7 +32,7 @@ type ParsedWebhook = ExecutableWebhook & {
 
 export const executeWebhookBlock = async (
   state: SessionState,
-  block: WebhookBlock | ZapierBlock | MakeComBlock | PabblyConnectBlock
+  block: WebhookBlock | ZapierBlock | MakeComBlock | PabblyConnectBlock | FlowwiseBlock
 ): Promise<ExecuteIntegrationResponse> => {
   const logs: ReplyLog[] = []
   const webhook =

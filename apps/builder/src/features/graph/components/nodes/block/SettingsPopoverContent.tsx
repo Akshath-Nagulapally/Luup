@@ -31,7 +31,8 @@ import { RatingInputSettings } from '@/features/blocks/inputs/rating/components/
 import { TextInputSettings } from '@/features/blocks/inputs/textInput/components/TextInputSettings'
 import { GoogleAnalyticsSettings } from '@/features/blocks/integrations/googleAnalytics/components/GoogleAnalyticsSettings'
 import { SendEmailSettings } from '@/features/blocks/integrations/sendEmail/components/SendEmailSettings'
-import { WebhookSettings } from '@/features/blocks/integrations/webhook/components/WebhookSettings'
+import { WebhookSettings } from '@/features/blocks/integrations/webhook/components/WebhookSettings';
+import { FlowwiseSettings  } from "@/features/blocks/integrations/flowwise/components/FlowwiseSettings";
 import { ZapierSettings } from '@/features/blocks/integrations/zapier/components/ZapierSettings'
 import { RedirectSettings } from '@/features/blocks/logic/redirect/components/RedirectSettings'
 import { SetVariableSettings } from '@/features/blocks/logic/setVariable/components/SetVariableSettings'
@@ -276,6 +277,9 @@ export const BlockSettings = ({
     }
     case IntegrationBlockType.ZAPIER: {
       return <ZapierSettings block={block} onOptionsChange={updateOptions} />
+    }
+    case IntegrationBlockType.FLOWWISE: {
+     return <FlowwiseSettings block={block} onOptionsChange={updateOptions} />
     }
     case IntegrationBlockType.MAKE_COM: {
       return <MakeComSettings block={block} onOptionsChange={updateOptions} />

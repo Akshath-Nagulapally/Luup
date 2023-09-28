@@ -13,6 +13,7 @@ export const ZapierSettings = ({
   block: { id: blockId, options },
   onOptionsChange,
 }: Props) => {
+  console.log("zapier settings options",options);
   const setLocalWebhook = async (newLocalWebhook: Webhook) => {
     if (!options.webhook) return
     onOptionsChange({
