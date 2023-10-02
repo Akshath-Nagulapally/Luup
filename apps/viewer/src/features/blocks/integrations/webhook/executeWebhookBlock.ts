@@ -34,6 +34,15 @@ export const executeWebhookBlock = async (
   state: SessionState,
   block: WebhookBlock | ZapierBlock | MakeComBlock | PabblyConnectBlock | FlowwiseBlock
 ): Promise<ExecuteIntegrationResponse> => {
+  console.log("execute webhook called state ", JSON.stringify(state));
+  console.log("execute webhook called block",JSON.stringify(block));
+  // if  ( block.type == "Flow Wise" && block.options && block.options.webhook ) {
+  //   console.log("entered ifff for flowwiseee",state.typebotsQueue[0].answers[0].value);
+  //   // @ts-ignore
+  //   block.options.webhook.body = {
+  //     question : state.typebotsQueue[0].answers[0].value
+  //   }
+  // }
   const logs: ReplyLog[] = []
   const webhook =
     block.options.webhook ??
@@ -50,7 +59,8 @@ export const executeWebhookBlock = async (
   const preparedWebhook = prepareWebhookAttributes(webhook, block.options)
   const parsedWebhook = await parseWebhookAttributes(
     state,
-    state.typebotsQueue[0].answers
+    state.typebotsQueue[0].answers ,
+    block
   )(preparedWebhook)
   if (!parsedWebhook) {
     logs.push({
@@ -94,7 +104,7 @@ const prepareWebhookAttributes = (
 const checkIfBodyIsAVariable = (body: string) => /^{{.+}}$/.test(body)
 
 const parseWebhookAttributes =
-  (state: SessionState, answers: AnswerInSessionState[]) =>
+  (state: SessionState, answers: AnswerInSessionState[] , block) =>
   async (webhook: Webhook): Promise<ParsedWebhook | undefined> => {
     if (!webhook.url || !webhook.method) return
     const { typebot } = state.typebotsQueue[0]
@@ -122,10 +132,11 @@ const parseWebhookAttributes =
       convertKeyValueTableToObject(webhook.queryParams, typebot.variables)
     )
     const bodyContent = await getBodyContent({
-      body: webhook.body,
+      body:  block.type == "Flow Wise" ?  JSON.stringify({ question : state.typebotsQueue[0].answers[0].value  }): webhook.body,
       answers,
       variables: typebot.variables,
-    })
+    });
+    console.log("body content", JSON.stringify(bodyContent) )
     const { data: body, isJson } =
       bodyContent && webhook.method !== HttpMethod.GET
         ? safeJsonParse(
@@ -134,7 +145,7 @@ const parseWebhookAttributes =
             })(bodyContent)
           )
         : { data: undefined, isJson: false }
-
+    console.log("bodyyyyy",body);
     return {
       url: parseVariables(typebot.variables)(
         webhook.url + (queryParams !== '' ? `?${queryParams}` : '')
@@ -153,7 +164,9 @@ export const executeWebhook = async (
   const logs: ReplyLog[] = []
   const { headers, url, method, basicAuth, body, isJson } = webhook
   const contentType = headers ? headers['Content-Type'] : undefined
-
+  console.log("webhook object",JSON.stringify(webhook))
+  console.log("bodyyy inside execute webhook",body);
+  console.log("final body passed", body && !isJson ? (body as string) : undefined );
   const request = {
     url,
     method: method as Method,
@@ -165,7 +178,7 @@ export const executeWebhook = async (
         : undefined,
     form:
       contentType?.includes('x-www-form-urlencoded') && body ? body : undefined,
-    body: body && !isJson ? (body as string) : undefined,
+    body: !webhook.url.includes("prediction") ? body && !isJson ? (body as string) : undefined : (body as string)
   } satisfies OptionsInit
   try {
     const response = await got(request.url, omit(request, 'url'))

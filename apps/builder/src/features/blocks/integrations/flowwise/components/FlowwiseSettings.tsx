@@ -1,6 +1,7 @@
-import { Alert, AlertIcon,  Stack, Text , Card , CardHeader , Heading } from '@chakra-ui/react'
+import { Alert, AlertIcon,  Stack, Text , Card , CardHeader , Heading , Button , Link   } from '@chakra-ui/react'
 // import { ExternalLinkIcon } from '@/components/icons'
 import { Webhook, WebhookOptions, FlowwiseBlock } from '@typebot.io/schemas'
+// import { VariableSearchInput } from '@/components/inputs/VariableSearchInput'
 import React , { useEffect , useState } from 'react'
 import { WebhookAdvancedConfigForm } from '../../webhook/components/WebhookAdvancedConfigForm'
 import { HttpMethod } from '@typebot.io/schemas/features/blocks/integrations/webhook/enums' 
@@ -14,6 +15,7 @@ export const FlowwiseSettings = ({
   onOptionsChange,
 }: Props) => {
   const [ chatFlows , setChatFlows ] = useState([]);
+  const [ userId , setUserId ] = useState("");
   console.log("options flowwise settings",options);
   const setLocalWebhook = async (newLocalWebhook: Webhook) => {
     if (!options.webhook) return
@@ -43,6 +45,7 @@ export const FlowwiseSettings = ({
    } ).then( res => {
     console.log("resulttt",res);
     const  userId = res.user.id;
+    setUserId(userId);
     // localStorage.setItem("providerAccountId", userId);
     fetch(`http://localhost:8080/api/v1/chatflows/${userId}`).then( result => {
       return result.json()
@@ -57,13 +60,25 @@ export const FlowwiseSettings = ({
    } )
   }, [] )
   const url = options?.webhook?.url
-
+  // const updateSaveVariable = (variable?: Variable) =>
+  //   options && onOptionsChange({ ...options, variableId: variable?.id })
   return (
     <Stack spacing={4}>
       <Alert status={url ? 'success' : 'info'} rounded="md">
         <AlertIcon />
         {url ? (
-          <>Your flowwise  is correctly configured 🚀</>
+          <Stack  >
+          <Text>Your flowwise  is correctly configured 🚀 </Text>
+          <Button
+              as={Link}
+              href={`http://localhost:8080/${userId}`}
+              isExternal
+              colorScheme="blue"
+            >
+              <Text mr="2"> Open  Flowwise </Text> 
+            </Button>
+
+          </Stack>
         ) : (
           <Stack>
             <Text>Head up to  to configure this block:</Text>
@@ -82,14 +97,24 @@ export const FlowwiseSettings = ({
                 </Card>
               )
             } ) }
-            {/* <Button
+
+            <Button
               as={Link}
-              href="https://zapier.com/apps/typebot/integrations"
+              href={`http://localhost:8080/${userId}`}
               isExternal
               colorScheme="blue"
             >
-              <Text mr="2">Zapier</Text> <ExternalLinkIcon />
-            </Button> */}
+              <Text mr="2"> Open  Flowwise </Text> 
+            </Button>
+            {/* <Stack>
+        <FormLabel mb="0" htmlFor="variable">
+          Save answer in a variable:
+        </FormLabel>
+        <VariableSearchInput
+          initialVariableId={options?.variableId}
+          onSelectVariable={updateSaveVariable}
+        />
+      </Stack> */}
           </Stack>
         )}
       </Alert>
