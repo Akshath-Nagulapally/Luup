@@ -1,5 +1,5 @@
 {
-  "name": "builder",
+  "name": "@typebot.io/builder",
   "version": "0.1.0",
   "license": "AGPL-3.0-or-later",
   "scripts": {
@@ -7,8 +7,8 @@
     "build": "dotenv -e ./.env -e ../../.env -- next build",
     "start": "dotenv -e ./.env -e ../../.env -- next start",
     "lint": "dotenv -e ./.env -e ../../.env -- next lint",
-    "test": "dotenv -e ./.env -e ../../.env -- pnpm playwright test",
-    "test:show-report": "pnpm playwright show-report src/test/reporters"
+    "test": "dotenv -e ./.env -e ../../.env -- yarn playwright test",
+    "test:show-report": "yarn playwright show-report src/test/reporters"
   },
   "dependencies": {
     "@chakra-ui/anatomy": "^2.1.1",
@@ -35,9 +35,9 @@
     "@trpc/next": "10.34.0",
     "@trpc/react-query": "10.34.0",
     "@trpc/server": "10.34.0",
-    "@typebot.io/emails": "workspace:*",
-    "@typebot.io/env": "workspace:*",
-    "@typebot.io/nextjs": "workspace:*",
+    "@typebot.io/emails": "1.0.0",
+    "@typebot.io/env": "1.0.0",
+    "@typebot.io/nextjs": "0.1.27",
     "@udecode/plate-basic-marks": "21.1.5",
     "@udecode/plate-common": "^21.1.5",
     "@udecode/plate-core": "21.1.5",
@@ -94,15 +94,15 @@
     "trpc-openapi": "1.2.0",
     "unsplash-js": "^7.0.18",
     "use-debounce": "9.0.4",
-    "@typebot.io/viewer": "workspace:*"
+    "@typebot.io/viewer": "0.1.0"
   },
   "devDependencies": {
     "@chakra-ui/styled-system": "2.9.1",
     "@playwright/test": "1.36.0",
-    "@typebot.io/lib": "workspace:*",
-    "@typebot.io/prisma": "workspace:*",
-    "@typebot.io/schemas": "workspace:*",
-    "@typebot.io/tsconfig": "workspace:*",
+    "@typebot.io/lib": "1.0.0",
+    "@typebot.io/prisma": "0.1.0",
+    "@typebot.io/schemas": "1.0.0",
+    "@typebot.io/tsconfig": "0.0.1",
     "@types/canvas-confetti": "1.6.0",
     "@types/jsonwebtoken": "9.0.2",
     "@types/micro-cors": "0.1.3",
@@ -116,7 +116,7 @@
     "@types/tinycolor2": "1.4.3",
     "dotenv-cli": "^7.2.1",
     "eslint": "8.44.0",
-    "eslint-config-custom": "workspace:*",
+    "@typebot.io/eslint-config-custom": "0.0.1",
     "next-runtime-env": "^1.6.2",
     "superjson": "^1.12.4",
     "typescript": "5.1.6",

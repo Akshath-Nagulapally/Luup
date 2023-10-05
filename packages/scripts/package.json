@@ -18,10 +18,10 @@
     "checkSubscriptionsStatus": "tsx checkSubscriptionsStatus.ts"
   },
   "devDependencies": {
-    "@typebot.io/emails": "workspace:*",
-    "@typebot.io/lib": "workspace:*",
-    "@typebot.io/prisma": "workspace:*",
-    "@typebot.io/schemas": "workspace:*",
+    "@typebot.io/emails": "1.0.0",
+    "@typebot.io/lib": "1.0.0",
+    "@typebot.io/prisma": "0.1.0",
+    "@typebot.io/schemas": "1.0.0",
     "@types/node": "20.4.2",
     "@types/prompts": "2.4.4",
     "deep-object-diff": "1.1.9",

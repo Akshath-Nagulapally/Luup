@@ -1,4 +1,4 @@
-import { TypebotViewer } from 'bot-engine'
+import { TypebotViewer } from '@typebot.io/bot-engine'
 import {
   AnswerInput,
   PublicTypebot,

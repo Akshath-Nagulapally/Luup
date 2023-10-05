@@ -1,17 +1,24 @@
 {
   "version": "2.17.2",
-  "name": "typebot-os",
+  "name": "typebot.io",
   "private": true,
   "license": "AGPL-3.0-or-later",
+  "workspaces": [
+    "packages/*",
+    "packages/deprecated/*",
+    "packages/embeds/*"
+    
+  ],
   "scripts": {
     "prepare": "husky install",
     "docker:up": "docker compose -f docker-compose.dev.yml up -d && sleep 5",
     "docker:nuke": "docker compose -f docker-compose.dev.yml down --volumes --remove-orphans",
-    "lint": "turbo run lint",
-    "dev": "pnpm docker:up && turbo build --filter=@typebot.io/nextjs... && turbo run dev --filter=builder... --filter=viewer... --parallel --no-cache",
-    "build": "pnpm docker:up && turbo run build",
+    "comment": "turbo run lint",
+    "lint": "",
+    "dev": "yarn  docker:up  && turbo build --filter=@typebot.io/nextjs... && turbo run dev --filter=@typebot.io/builder... --filter=@typebot.io/viewer... --parallel --no-cache",
+    "build": "yarn  docker:up && turbo run build",
     "build:apps": "turbo run build --filter=builder... --filter=viewer...",
-    "db:migrate": "cd packages/prisma && pnpm run db:migrate",
+    "db:migrate": "cd packages/prisma && yarn run db:migrate",
     "generate-change-log": "git fetch --all && pnpx gitmoji-changelog"
   },
   "devDependencies": {
@@ -26,5 +33,8 @@
       "path": "node_modules/cz-emoji"
     }
   },
-  "packageManager": "pnpm@8.6.12"
+  "engines": {
+    "node": ">=18.15.0"
+  },
+  "packageManager": "yarn"
 }

@@ -75,7 +75,7 @@ export const ImageBubble = (props: Props) => {
             <a
               href={props.content.clickLink.url}
               target="_blank"
-              class={clsx('z-10', isTyping() ? 'h-8' : 'p-4')}
+              class={clsx('z-10', isTyping() ? 'h-8' : 'p-4')} rel="noreferrer"
             >
               {Image}
             </a>

@@ -6,7 +6,7 @@
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "scripts": {
-    "preview": "concurrently \"pnpm run watch\" \"sleep 5 && pnpm run serve\" -n \"watch,serve\" -c \"bgBlue.bold,bgMagenta.bold\"",
+    "preview": "concurrently \"yarn run watch\" \"sleep 5 && yarn run serve\" -n \"watch,serve\" -c \"bgBlue.bold,bgMagenta.bold\"",
     "watch": "tsx watch ./src/preview.tsx --clear-screen=false",
     "serve": "http-server dist -a localhost -p 3223 -o -c-1",
     "lint": "eslint \"src/**/*.ts*\""
@@ -22,13 +22,13 @@
     "concurrently": "8.2.0",
     "http-server": "14.1.1",
     "nodemailer": "6.9.3",
-    "react": "18.2.0",
+    "react": "17.0.2",
     "tsx": "3.12.7",
-    "@typebot.io/lib": "workspace:*",
+    "@typebot.io/lib": "1.0.0",
     "eslint": "8.44.0",
-    "eslint-config-custom": "workspace:*",
-    "@typebot.io/tsconfig": "workspace:*",
-    "@typebot.io/env": "workspace:*"
+    "@typebot.io/eslint-config-custom": "0.0.1",
+    "@typebot.io/tsconfig": "0.0.1",
+    "@typebot.io/env": "1.0.0"
   },
   "peerDependencies": {
     "@faire/mjml-react": "2.1.4",

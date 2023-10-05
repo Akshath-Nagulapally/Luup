@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-custom",
+  "name": "@typebot.io/eslint-config-custom",
   "version": "0.0.1",
   "main": "index.js",
   "dependencies": {

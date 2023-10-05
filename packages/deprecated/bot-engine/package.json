@@ -1,5 +1,5 @@
 {
-  "name": "bot-engine",
+  "name": "@typebot.io/bot-engine",
   "private": true,
   "license": "AGPL-3.0-or-later",
   "version": "0.1.0",
@@ -28,25 +28,25 @@
     "@types/react-scroll": "1.8.6",
     "@types/react-transition-group": "4.4.5",
     "autoprefixer": "10.4.13",
-    "@typebot.io/prisma": "workspace:*",
+    "@typebot.io/prisma": "0.1.0",
     "esbuild": "^0.17.5",
     "eslint": "8.32.0",
-    "eslint-config-custom": "workspace:*",
-    "@typebot.io/schemas": "workspace:*",
+    "@typebot.io/eslint-config-custom": "0.0.1",
+    "@typebot.io/schemas": "1.0.0",
     "postcss": "8.4.21",
     "prettier": "2.8.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "tailwindcss": "3.2.4",
-    "@typebot.io/tsconfig": "workspace:*",
+    "@typebot.io/tsconfig": "0.0.1",
     "tsup": "6.5.0",
-    "typebot-js": "workspace:*",
+    "@typebot.io/typebot-js": "2.2.17",
     "typescript": "4.9.4",
-    "@typebot.io/lib": "workspace:*"
+    "@typebot.io/lib": "1.0.0"
   },
   "peerDependencies": {
-    "@typebot.io/prisma": "workspace:*",
-    "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "@typebot.io/prisma": "0.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   }
 }

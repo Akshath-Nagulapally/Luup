@@ -10,7 +10,7 @@
     "zod": "3.21.4"
   },
   "devDependencies": {
-    "@typebot.io/tsconfig": "workspace:*",
+    "@typebot.io/tsconfig": "0.0.1",
     "@types/node": "^20.4.9",
     "esbuild": "^0.19.1"
   },

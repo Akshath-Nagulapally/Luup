@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "rollup --watch --config rollup.config.js",
     "build": "rollup --config rollup.config.js",
-    "lint": "eslint --fix \"src/**/*.ts*\""
+    "comment": "eslint --fix \"src/**/*.ts*\"",
+    "lint":""
   },
   "keywords": [],
   "author": "Baptiste Arnaud",
@@ -21,17 +22,17 @@
     "@rollup/plugin-node-resolve": "15.1.0",
     "@rollup/plugin-terser": "0.4.3",
     "@rollup/plugin-typescript": "11.1.2",
-    "@typebot.io/js": "workspace:*",
-    "@typebot.io/react": "workspace:*",
-    "@typebot.io/lib": "workspace:*",
-    "@typebot.io/prisma": "workspace:*",
-    "@typebot.io/schemas": "workspace:*",
-    "@typebot.io/tsconfig": "workspace:*",
+    "@typebot.io/js": "0.1.27",
+    "@typebot.io/react": "0.1.27",
+    "@typebot.io/lib": "1.0.0",
+    "@typebot.io/prisma": "0.1.0",
+    "@typebot.io/schemas": "1.0.0",
+    "@typebot.io/tsconfig": "0.0.1",
     "@types/node": "20.4.2",
     "@types/react": "18.2.15",
     "eslint": "8.44.0",
-    "eslint-config-custom": "workspace:*",
-    "react": "18.2.0",
+    "@typebot.io/eslint-config-custom": "0.0.1",
+    "react": "17.0.2",
     "rollup": "3.26.2",
     "rollup-plugin-typescript-paths": "1.4.0",
     "tslib": "2.6.0",
@@ -40,6 +41,6 @@
   },
   "peerDependencies": {
     "next": "12.x || 13.x",
-    "react": "18.x"
+    "react": "17.x"
   }
 }

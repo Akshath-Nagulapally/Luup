@@ -10,8 +10,8 @@
     "zod": "3.21.4"
   },
   "devDependencies": {
-    "@typebot.io/prisma": "workspace:*",
-    "@typebot.io/tsconfig": "workspace:*",
+    "@typebot.io/prisma": "0.1.0",
+    "@typebot.io/tsconfig": "0.0.1",
     "typescript": "5.1.6"
   }
 }

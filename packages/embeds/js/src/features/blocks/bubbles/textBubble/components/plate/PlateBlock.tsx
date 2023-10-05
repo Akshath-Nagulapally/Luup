@@ -19,7 +19,7 @@ export const PlateBlock = (props: Props) => (
       }
     >
       <Match when={props.element.type === 'a'}>
-        <a href={props.element.url as string} target="_blank" class="slate-a">
+        <a href={props.element.url as string} target="_blank" class="slate-a" rel="noreferrer">
           <For each={props.element.children as TDescendant[]}>
             {(child) => <PlateBlock element={child} />}
           </For>
