@@ -1,0 +1,1541 @@
+2023-09-20 11:22:20 [ERROR]: OpenAI or Azure OpenAI API key not found
+Error: OpenAI or Azure OpenAI API key not found
+    at new ChatOpenAI (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/chat_models/openai.cjs:292:19)
+    at ChatOpenAI_ChatModels.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/chatmodels/ChatOpenAI/ChatOpenAI.ts:176:23)
+    at async buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:50)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-20 11:22:20 [ERROR]: [server]: Error: Error: OpenAI or Azure OpenAI API key not found
+Error: Error: OpenAI or Azure OpenAI API key not found
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-20 11:26:37 [ERROR]: OpenAI or Azure OpenAI API key not found
+Error: OpenAI or Azure OpenAI API key not found
+    at new ChatOpenAI (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/chat_models/openai.cjs:292:19)
+    at ChatOpenAI_ChatModels.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/chatmodels/ChatOpenAI/ChatOpenAI.ts:176:23)
+    at async buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:50)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-20 11:26:37 [ERROR]: [server]: Error: Error: OpenAI or Azure OpenAI API key not found
+Error: Error: OpenAI or Azure OpenAI API key not found
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-20 11:27:20 [ERROR]: OpenAI or Azure OpenAI API key not found
+Error: OpenAI or Azure OpenAI API key not found
+    at new ChatOpenAI (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/chat_models/openai.cjs:292:19)
+    at ChatOpenAI_ChatModels.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/chatmodels/ChatOpenAI/ChatOpenAI.ts:176:23)
+    at async buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:50)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-20 11:27:20 [ERROR]: [server]: Error: Error: OpenAI or Azure OpenAI API key not found
+Error: Error: OpenAI or Azure OpenAI API key not found
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-20 11:39:39 [ERROR]: OpenAI or Azure OpenAI API key not found
+Error: OpenAI or Azure OpenAI API key not found
+    at new ChatOpenAI (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/chat_models/openai.cjs:292:19)
+    at ChatOpenAI_ChatModels.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/chatmodels/ChatOpenAI/ChatOpenAI.ts:176:23)
+    at async buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:50)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-20 11:39:39 [ERROR]: [server]: Error: Error: OpenAI or Azure OpenAI API key not found
+Error: Error: OpenAI or Azure OpenAI API key not found
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:938:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:694:13
+2023-09-21 15:05:52 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:211:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InsertQueryBuilder.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/query-builder/InsertQueryBuilder.js:106:33)
+    at async SubjectExecutor.executeInsertOperations (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:260:42)
+    at async SubjectExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:92:9)
+    at async EntityPersistExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/EntityPersistExecutor.js:140:21)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/dist/index.js:291:29
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:211:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InsertQueryBuilder.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/query-builder/InsertQueryBuilder.js:106:33)
+    at async SubjectExecutor.executeInsertOperations (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:260:42)
+    at async SubjectExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:92:9)
+    at async EntityPersistExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/EntityPersistExecutor.js:140:21)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/dist/index.js:291:29
+2023-09-21 15:05:52 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:211:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InsertQueryBuilder.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/query-builder/InsertQueryBuilder.js:106:33)
+    at async SubjectExecutor.executeInsertOperations (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:260:42)
+    at async SubjectExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:92:9)
+    at async EntityPersistExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/EntityPersistExecutor.js:140:21)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/dist/index.js:291:29
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/driver/postgres/PostgresQueryRunner.js:211:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async InsertQueryBuilder.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/query-builder/InsertQueryBuilder.js:106:33)
+    at async SubjectExecutor.executeInsertOperations (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:260:42)
+    at async SubjectExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/SubjectExecutor.js:92:9)
+    at async EntityPersistExecutor.execute (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/persistence/EntityPersistExecutor.js:140:21)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/dist/index.js:291:29
+2023-09-25 15:29:47 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-25 15:30:18 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-25 15:30:30 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-25 15:30:40 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-25 15:31:05 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-25 16:26:36 [ERROR]: unhandledRejection: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:270:44
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:270:44
+2023-09-25 16:26:36 [ERROR]: unhandledRejection: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:270:44
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:270:44
+2023-09-25 16:35:26 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-25 16:36:26 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-25 16:38:20 [ERROR]: ❌ [server]: Error during Data Source initialization: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1030:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:92:50
+2023-09-27 10:00:35 [ERROR]: unhandledRejection: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 10:00:35 [ERROR]: unhandledRejection: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:32:28 [ERROR]: ❌ [server]: Error during Data Source initialization: column "providerAccountId" of relation "chat_flow" contains null values
+QueryFailedError: column "providerAccountId" of relation "chat_flow" contains null values
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 11:32:42 [ERROR]: unhandledRejection: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:32:42 [ERROR]: unhandledRejection: column ChatFlow.providerAccountId does not exist
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: column ChatFlow.providerAccountId does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:35:10 [ERROR]: ❌ [server]: Error during Data Source initialization: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 11:36:44 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:36:44 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:37:03 [ERROR]: ❌ [server]: Error during Data Source initialization: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 11:37:15 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:37:15 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:40:47 [ERROR]: ❌ [server]: Error during Data Source initialization: column "providerAccountId" of relation "chat_flow" already exists
+QueryFailedError: column "providerAccountId" of relation "chat_flow" already exists
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 11:40:58 [ERROR]: unhandledRejection: column ChatFlow.apiConfig does not exist
+QueryFailedError: column ChatFlow.apiConfig does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: column ChatFlow.apiConfig does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:40:58 [ERROR]: unhandledRejection: column ChatFlow.apiConfig does not exist
+QueryFailedError: column ChatFlow.apiConfig does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: column ChatFlow.apiConfig does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 11:42:13 [ERROR]: ❌ [server]: Error during Data Source initialization: column "providerAccountId" of relation "chat_flow" already exists
+QueryFailedError: column "providerAccountId" of relation "chat_flow" already exists
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 11:54:16 [ERROR]: ❌ [server]: Error during Data Source initialization: column "providerAccountId" of relation "chat_flow" already exists
+QueryFailedError: column "providerAccountId" of relation "chat_flow" already exists
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 12:01:15 [ERROR]: ❌ [server]: Error during Data Source initialization: column "providerAccountId" of relation "chat_flow" already exists
+QueryFailedError: column "providerAccountId" of relation "chat_flow" already exists
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 12:01:25 [ERROR]: ❌ [server]: Error during Data Source initialization: syntax error at or near "EXISTS"
+QueryFailedError: syntax error at or near "EXISTS"
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 12:01:33 [ERROR]: ❌ [server]: Error during Data Source initialization: syntax error at or near "EXISTS"
+QueryFailedError: syntax error at or near "EXISTS"
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 12:02:32 [ERROR]: ❌ [server]: Error during Data Source initialization: syntax error at or near "EXISTS"
+QueryFailedError: syntax error at or near "EXISTS"
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async AddProviderAccountId17777777777777.up (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/database/migrations/postgres/17777777777777-AddProviderAccountId.ts:6:9)
+    at async MigrationExecutor.executePendingMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/migration/MigrationExecutor.ts:336:17)
+    at async DataSource.runMigrations (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/data-source/DataSource.ts:397:13)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:76:17
+2023-09-27 12:08:52 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-27 12:08:52 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-29 11:53:35 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-29 11:53:35 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-29 14:17:08 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-09-29 14:17:08 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-10-02 18:45:05 [ERROR]: unhandledRejection: invalid input syntax for type uuid: "1234"
+QueryFailedError: invalid input syntax for type uuid: "1234"
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:297:30
+QueryFailedError: invalid input syntax for type uuid: "1234"
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:297:30
+2023-10-02 18:45:05 [ERROR]: unhandledRejection: invalid input syntax for type uuid: "1234"
+QueryFailedError: invalid input syntax for type uuid: "1234"
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:297:30
+QueryFailedError: invalid input syntax for type uuid: "1234"
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getOne (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1697:25)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:297:30
+2023-10-03 08:35:11 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:35:11 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:38:16 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:38:16 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:43:01 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:43:01 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:43:24 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:43:24 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:44:40 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:44:40 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:45:08 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:45:08 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:46:15 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:46:15 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:46:29 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:46:29 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:46:46 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 08:46:46 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 09:04:03 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 09:04:03 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 09:26:20 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 09:26:20 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 09:28:20 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:28:20 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:28:23 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:28:23 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:29:40 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:29:40 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:38:20 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 09:38:20 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 09:38:23 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:38:23 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:50:39 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:50:39 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:59:59 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 09:59:59 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 10:16:18 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 10:16:18 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 10:19:22 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 10:19:22 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 10:28:10 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 10:28:10 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 11:12:44 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 11:12:44 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 11:13:43 [ERROR]: llm._modelType is not a function
+TypeError: llm._modelType is not a function
+    at Function.fromLLMAndTools (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/openai/index.cjs:121:17)
+    at initializeAgentExecutorWithOptions (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/agents/initialize.cjs:106:47)
+    at OpenAIFunctionAgent_Agents.init (/Users/utkarshkapil/Desktop/Flowise/packages/components/nodes/agents/OpenAIFunctionAgent/OpenAIFunctionAgent.ts:67:66)
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:246:72)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 11:13:43 [ERROR]: [server]: Error: TypeError: llm._modelType is not a function
+Error: TypeError: llm._modelType is not a function
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 11:15:52 [ERROR]: You exceeded your current quota, please check your plan and billing details.
+InsufficientQuotaError: You exceeded your current quota, please check your plan and billing details.
+    at Object.onFailedAttempt (/Users/utkarshkapil/Desktop/Flowise/node_modules/langchain/dist/util/async_caller.cjs:87:35)
+    at RetryOperation._fn (/Users/utkarshkapil/Desktop/Flowise/node_modules/p-retry/index.js:67:20)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2023-10-03 11:15:52 [ERROR]: [server]: Error: InsufficientQuotaError: You exceeded your current quota, please check your plan and billing details.
+Error: InsufficientQuotaError: You exceeded your current quota, please check your plan and billing details.
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:03:04 [ERROR]: Request failed with status code 404
+Error: Request failed with status code 404
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:03:04 [ERROR]: [server]: Error: Error: Request failed with status code 404
+Error: Error: Request failed with status code 404
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:04:19 [ERROR]: Request failed with status code 404
+Error: Request failed with status code 404
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:04:19 [ERROR]: [server]: Error: Error: Request failed with status code 404
+Error: Error: Request failed with status code 404
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:06:38 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:06:38 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:07:24 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:07:24 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:08:17 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:08:17 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:08:29 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:08:29 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:09:17 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:09:17 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:690:17
+2023-10-03 13:12:12 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:12:12 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:14:15 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:14:15 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:16:41 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:16:41 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:19:03 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:19:03 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:19:13 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:19:13 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:23:29 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:23:29 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 13:26:06 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 13:26:06 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:12:49 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:12:49 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:14:16 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:14:16 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:15:14 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:15:14 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:19:38 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:19:38 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:21:40 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:21:40 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:23:52 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:23:52 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:25:34 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:25:34 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:29:00 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:29:00 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 14:31:42 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 14:31:42 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:39:19 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:39:19 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:41:37 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:41:37 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:42:26 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:42:26 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:43:40 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:43:40 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:43:48 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:43:48 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:255:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:47:46 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:47:46 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:256:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:53:28 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:53:28 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:256:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:54:44 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:54:44 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:256:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:54:54 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:54:54 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:256:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:56:27 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:56:27 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:256:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 15:58:26 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 15:58:26 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:256:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 16:11:51 [ERROR]: Request failed with status code 401
+Error: Request failed with status code 401
+    at createError (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/createError.js:16:15)
+    at settle (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/core/settle.js:17:12)
+    at IncomingMessage.handleStreamEnd (/Users/utkarshkapil/Desktop/Flowise/node_modules/openai/node_modules/axios/lib/adapters/http.js:322:11)
+    at IncomingMessage.emit (node:events:525:35)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1359:12)
+    at processTicksAndRejections (node:internal/process/task_queues:82:21)
+2023-10-03 16:11:51 [ERROR]: [server]: Error: Error: Request failed with status code 401
+Error: Error: Request failed with status code 401
+    at buildLangchain (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/utils/index.ts:256:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async App.processPrediction (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:940:40)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:696:13
+2023-10-03 16:45:23 [ERROR]: [server]: Error: Request failed with status code 404 and body {"error":{"code":"DeploymentNotFound","message":"The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again."}}
+2023-10-03 16:45:54 [ERROR]: [server]: Error: Request failed with status code 404 and body {"error":{"code":"DeploymentNotFound","message":"The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again."}}
+2023-10-03 16:46:47 [ERROR]: [server]: Error: Request failed with status code 401 and body {"statusCode":401,"message":"Unauthorized. Access token is missing, invalid, audience is incorrect (https://cognitiveservices.azure.com), or have expired."}
+2023-10-03 16:48:13 [ERROR]: [server]: Error: Request failed with status code 401 and body {"statusCode":401,"message":"Unauthorized. Access token is missing, invalid, audience is incorrect (https://cognitiveservices.azure.com), or have expired."}
+2023-10-04 10:16:00 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+2023-10-04 10:16:00 [ERROR]: unhandledRejection: relation "chat_flow" does not exist
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
+QueryFailedError: relation "chat_flow" does not exist
+    at PostgresQueryRunner.query (/Users/utkarshkapil/Desktop/Flowise/node_modules/typeorm/src/driver/postgres/PostgresQueryRunner.ts:299:19)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async SelectQueryBuilder.loadRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3789:25)
+    at async SelectQueryBuilder.executeEntitiesAndRawResults (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:3541:26)
+    at async SelectQueryBuilder.getRawAndEntities (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1670:29)
+    at async SelectQueryBuilder.getMany (/Users/utkarshkapil/Desktop/Flowise/node_modules/src/query-builder/SelectQueryBuilder.ts:1760:25)
+    at async getAllChatFlow (/Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:1033:12)
+    at async /Users/utkarshkapil/Desktop/Flowise/packages/server/src/index.ts:271:44
