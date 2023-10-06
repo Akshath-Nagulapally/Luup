@@ -5,7 +5,7 @@ import {
   LogicBlockType,
 } from '@typebot.io/schemas'
 
-export const getHelpDocUrl = (blockType: BlockWithOptions['type']): string => {
+export const getHelpDocUrl = (blockType: BlockWithOptions['type']): string  => {
   switch (blockType) {
     case LogicBlockType.TYPEBOT_LINK:
       return 'https://docs.typebot.io/editor/blocks/logic/typebot-link'
@@ -65,5 +65,7 @@ export const getHelpDocUrl = (blockType: BlockWithOptions['type']): string => {
       return 'https://docs.typebot.io/editor/blocks/integrations/pixel'
     case IntegrationBlockType.ZEMANTIC_AI:
       return 'https://docs.typebot.io/editor/blocks/integrations/zemantic-ai'
+    default:
+      return ""  
   }
 }
