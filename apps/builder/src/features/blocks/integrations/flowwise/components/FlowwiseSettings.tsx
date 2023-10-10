@@ -1,11 +1,12 @@
-import { Alert, AlertIcon,  Stack, Text , Card , CardHeader , Heading , Button , Link   } from '@chakra-ui/react'
+import { Alert, AlertIcon,  Stack, Text , Card , CardHeader , Heading , Button , Link    } from '@chakra-ui/react'
 // import { ExternalLinkIcon } from '@/components/icons'
 import { Webhook, WebhookOptions, FlowwiseBlock } from '@typebot.io/schemas'
 // import { VariableSearchInput } from '@/components/inputs/VariableSearchInput'
 import React , { useEffect , useState } from 'react'
 import { WebhookAdvancedConfigForm } from '../../webhook/components/WebhookAdvancedConfigForm'
 import { HttpMethod } from '@typebot.io/schemas/features/blocks/integrations/webhook/enums'
-import { env } from '@typebot.io/env' 
+import { env } from '@typebot.io/env'
+// import { VariableSearchInput } from '@/components/inputs/VariableSearchInput' 
 type Props = {
   block: FlowwiseBlock
   onOptionsChange: (options: WebhookOptions) => void
@@ -28,7 +29,8 @@ export const FlowwiseSettings = ({
     })
     return
   }
-
+  // const updateSaveVariable = (variable?: Variable) =>
+  //   options && onOptionsChange({ ...options, variableId: variable?.id })
   const chooseChatFlow = (id : string ) => {
    console.log("choose chatflow",id);
    const  newWebhookObj = {
@@ -100,7 +102,15 @@ export const FlowwiseSettings = ({
                 </Card>
               )
             } ) }
-
+             {/* <Stack>
+        <FormLabel mb="0" htmlFor="variable">
+          Save answer in a variable:
+        </FormLabel>
+        <VariableSearchInput
+          initialVariableId={options?.variableId}
+          onSelectVariable={updateSaveVariable}
+        />
+      </Stack> */}
             <Button
               as={Link}
               href={`${ env.NEXT_PUBLIC_FLOWISE_URL ?  env.NEXT_PUBLIC_FLOWISE_URL[0] : ""}/${userId}`}

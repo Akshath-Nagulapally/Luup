@@ -167,6 +167,7 @@ export const executeWebhook = async (
   console.log("webhook object",JSON.stringify(webhook))
   console.log("bodyyy inside execute webhook",body);
   console.log("final body passed", body && !isJson ? (body as string) : undefined );
+  console.log("webhook url includes prediction",webhook.url.includes("prediction"));
   const request = {
     url,
     method: method as Method,
@@ -181,23 +182,55 @@ export const executeWebhook = async (
     body: !webhook.url.includes("prediction") ? body && !isJson ? (body as string) : undefined : (body as string)
   } satisfies OptionsInit
   try {
-    const response = await got(request.url, omit(request, 'url'))
-    logs.push({
-      status: 'success',
-      description: `Webhook successfuly executed.`,
-      details: {
-        statusCode: response.statusCode,
-        request,
-        response: safeJsonParse(response.body).data,
-      },
-    })
-    return {
-      response: {
-        statusCode: response.statusCode,
-        data: safeJsonParse(response.body).data,
-      },
-      logs,
+    // console.log("requst body finallllll", request.body,  omit(request, 'url') );
+    // const resp1 = await got.post(request.url, {
+    //   json : request.body ,
+    //   responseType : "json"
+    // } )
+    // console.log("resp1 status",resp1.statusCode);
+    // console.log("resp1 body", resp1.body ); 
+    
+    if ( webhook.url.includes("prediction") ) {
+        const resp1 = await got.post(request.url, {
+            json : request.body ,
+            responseType : "json"
+          } );
+          logs.push({
+            status: 'success',
+            description: `Webhook successfuly executed.`,
+            details: {
+              statusCode: resp1.statusCode,
+              request,
+              response: resp1.body,
+            },
+          })
+          return {
+            response: {
+              statusCode: resp1.statusCode,
+              data: resp1.body,
+            },
+            logs,
+          }
+    } else {
+      const response = await got(request.url, omit(request, 'url'))
+      logs.push({
+        status: 'success',
+        description: `Webhook successfuly executed.`,
+        details: {
+          statusCode: response.statusCode,
+          request,
+          response: safeJsonParse(response.body).data,
+        },
+      })
+      return {
+        response: {
+          statusCode: response.statusCode,
+          data: safeJsonParse(response.body).data,
+        },
+        logs,
+      }
     }
+    
   } catch (error) {
     if (error instanceof HTTPError) {
       const response = {

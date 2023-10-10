@@ -35,6 +35,7 @@ export const continueBotFlow =
   async (
     reply?: string
   ): Promise<ChatReply & { newSessionState: SessionState }> => {
+    console.log("reply entered",reply);
     let newSessionState = { ...state }
     const group = state.typebotsQueue[0].typebot.groups.find(
       (group) => group.id === state.currentBlock?.groupId
@@ -59,12 +60,13 @@ export const continueBotFlow =
         }
         newSessionState = updateVariables(state)([newVariable])
       }
-    } else if (reply && block.type === IntegrationBlockType.WEBHOOK) {
+    } else if (reply && (block.type === IntegrationBlockType.WEBHOOK)  ) {
       const result = resumeWebhookExecution({
         state,
         block,
         response: JSON.parse(reply),
-      })
+      });
+      
       if (result.newSessionState) newSessionState = result.newSessionState
     } else if (
       block.type === IntegrationBlockType.OPEN_AI &&
