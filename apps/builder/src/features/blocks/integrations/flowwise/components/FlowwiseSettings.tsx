@@ -4,7 +4,8 @@ import { Webhook, WebhookOptions, FlowwiseBlock } from '@typebot.io/schemas'
 // import { VariableSearchInput } from '@/components/inputs/VariableSearchInput'
 import React , { useEffect , useState } from 'react'
 import { WebhookAdvancedConfigForm } from '../../webhook/components/WebhookAdvancedConfigForm'
-import { HttpMethod } from '@typebot.io/schemas/features/blocks/integrations/webhook/enums' 
+import { HttpMethod } from '@typebot.io/schemas/features/blocks/integrations/webhook/enums'
+import { env } from '@typebot.io/env' 
 type Props = {
   block: FlowwiseBlock
   onOptionsChange: (options: WebhookOptions) => void
@@ -14,6 +15,8 @@ export const FlowwiseSettings = ({
   block: { id: blockId, options },
   onOptionsChange,
 }: Props) => {
+  // console.log("process env",process.env);
+  // console.log("env package value", env);
   const [ chatFlows , setChatFlows ] = useState([]);
   const [ userId , setUserId ] = useState("");
   console.log("options flowwise settings",options);
@@ -33,21 +36,21 @@ export const FlowwiseSettings = ({
     queryParams: [],
     headers: [],
     method: HttpMethod.POST,
-    url: `http://localhost:8080/api/v1/prediction/${id}`,
+    url: `${ env.NEXT_PUBLIC_FLOWISE_URL ?  env.NEXT_PUBLIC_FLOWISE_URL[0] : ""}/api/v1/prediction/${id}`,
     
    }
    setLocalWebhook(newWebhookObj);
 
   }
   useEffect( () => {
-   fetch(`http://localhost:3000/api/auth/session`).then( result => {
+   fetch(`${ env.NEXT_PUBLIC_BUILDER_URL ?  env.NEXT_PUBLIC_BUILDER_URL[0] : ""}/api/auth/session`).then( result => {
     return result.json()
    } ).then( res => {
     console.log("resulttt",res);
     const  userId = res.user.id;
     setUserId(userId);
     // localStorage.setItem("providerAccountId", userId);
-    fetch(`http://localhost:8080/api/v1/chatflows/${userId}`).then( result => {
+    fetch(`${ env.NEXT_PUBLIC_FLOWISE_URL ?  env.NEXT_PUBLIC_FLOWISE_URL[0] : ""}/api/v1/allchatflows/${userId}`).then( result => {
       return result.json()
     } ).then( res => {
       console.log("chatflowss response", res );
@@ -71,7 +74,7 @@ export const FlowwiseSettings = ({
           <Text>Your flowwise  is correctly configured 🚀 </Text>
           <Button
               as={Link}
-              href={`http://localhost:8080/${userId}`}
+              href={`${ env.NEXT_PUBLIC_FLOWISE_URL ?  env.NEXT_PUBLIC_FLOWISE_URL[0] : ""}/${userId}`}
               isExternal
               colorScheme="blue"
             >
@@ -100,7 +103,7 @@ export const FlowwiseSettings = ({
 
             <Button
               as={Link}
-              href={`http://localhost:8080/${userId}`}
+              href={`${ env.NEXT_PUBLIC_FLOWISE_URL ?  env.NEXT_PUBLIC_FLOWISE_URL[0] : ""}/${userId}`}
               isExternal
               colorScheme="blue"
             >
