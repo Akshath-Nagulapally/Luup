@@ -33,6 +33,14 @@ const baseEnv = {
       .string()
       .min(1)
       .transform((string) => string.split(',')),
+      NEXT_PUBLIC_FLOWISE_URL: z
+    .string()
+    .min(1)
+    .transform((string) => string.split(',')) ,
+    NEXT_PUBLIC_BUILDER_URL :    z
+    .string()
+    .min(1)
+    .transform((string) => string.split(',')) ,
     NEXT_PUBLIC_VIEWER_INTERNAL_URL: z.string().url().optional(),
     NEXT_PUBLIC_ONBOARDING_TYPEBOT_ID: z.string().min(1).optional(),
     NEXT_PUBLIC_BOT_FILE_UPLOAD_MAX_SIZE: z.coerce.number().optional(),
@@ -40,6 +48,8 @@ const baseEnv = {
   runtimeEnv: {
     NEXT_PUBLIC_E2E_TEST: getRuntimeVariable('NEXT_PUBLIC_E2E_TEST'),
     NEXT_PUBLIC_VIEWER_URL: getRuntimeVariable('NEXT_PUBLIC_VIEWER_URL'),
+    NEXT_PUBLIC_FLOWISE_URL : getRuntimeVariable('NEXT_PUBLIC_FLOWISE_URL'),
+    NEXT_PUBLIC_BUILDER_URL : getRuntimeVariable('NEXT_PUBLIC_BUILDER_URL'),
     NEXT_PUBLIC_VIEWER_INTERNAL_URL: getRuntimeVariable(
       'NEXT_PUBLIC_VIEWER_INTERNAL_URL'
     ),
@@ -57,6 +67,8 @@ const githubEnv = {
     GITHUB_CLIENT_SECRET: z.string().min(1).optional(),
   },
 }
+
+
 
 const facebookEnv = {
   server: {
