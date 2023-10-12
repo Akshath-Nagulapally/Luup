@@ -1,6 +1,6 @@
 import { Stack, HStack, Text, Switch, Tag } from '@chakra-ui/react'
 import { Plan } from '@typebot.io/prisma'
-import { TextLink } from '@/components/TextLink'
+// import { TextLink } from '@/components/TextLink'
 import { useToast } from '@/hooks/useToast'
 import { trpc } from '@/lib/trpc'
 import { guessIfUserIsEuropean } from '@typebot.io/lib/pricing'
@@ -12,7 +12,7 @@ import { useUser } from '@/features/account/hooks/useUser'
 import { StarterPlanPricingCard } from './StarterPlanPricingCard'
 import { ProPlanPricingCard } from './ProPlanPricingCard'
 import { useScopedI18n } from '@/locales'
-import { StripeClimateLogo } from './StripeClimateLogo'
+// import { StripeClimateLogo } from './StripeClimateLogo'
 
 type Props = {
   workspace: Workspace

@@ -30,6 +30,7 @@ export const GettingStartedModal = () => {
 
   useEffect(() => {
     if (query.isFirstBot) {
+      console.log("is open",onOpen);
       // onOpen()
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

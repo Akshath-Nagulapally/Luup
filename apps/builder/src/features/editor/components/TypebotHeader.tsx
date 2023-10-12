@@ -10,7 +10,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import {
-  BuoyIcon,
+ 
   ChevronLeftIcon,
   RedoIcon,
   UndoIcon,
@@ -79,7 +79,7 @@ export const TypebotHeader = () => {
       ? onOpen()
       : window.open('https://docs.typebot.io', '_blank')
   }
-
+  console.log(handleHelpClick);
   return (
     <Flex
       w="full"

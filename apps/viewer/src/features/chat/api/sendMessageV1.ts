@@ -117,14 +117,14 @@ export const sendMessageV1 = publicProcedure
             logs: allLogs,
             clientSideActions,
           })
-        let repliedTextMessages = [];
-        for ( let i=0;i < messages.length;i++ ) {
-           if ( messages[i].type == "text" && messages[i].content  ) {
-            // @ts-ignore
-             repliedTextMessages.push( messages[i].content.richText[0].children[0].text );
-           }
-        }
-        console.log("replied text message", repliedTextMessages );
+        // let repliedTextMessages = [];
+        // for ( let i=0;i < messages.length;i++ ) {
+        //    if ( messages[i].type == "text" && messages[i].content  ) {
+        //     // @ts-ignore
+        //      repliedTextMessages.push( messages[i].content.richText[0].children[0].text );
+        //    }
+        // }
+        // console.log("replied text message", repliedTextMessages );
         return {
           messages,
           input,
