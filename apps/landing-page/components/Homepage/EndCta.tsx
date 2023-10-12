@@ -39,7 +39,7 @@ export const EndCta = () => {
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            Create a typebot
+            Create a Bot 
           </Button>
         </Flex>
 

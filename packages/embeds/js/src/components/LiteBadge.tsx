@@ -46,8 +46,8 @@ export const LiteBadge = (props: Props) => {
       class="lite-badge"
       id="lite-badge"
     >
-      <TypebotLogo />
-      <span>Made with Typebot</span>
+      {/* <TypebotLogo /> */}
+      <span>Made with Quadz</span>
     </a>
   )
 }
