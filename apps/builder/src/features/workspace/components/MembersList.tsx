@@ -102,9 +102,9 @@ export const MembersList = () => {
 
   return (
     <Stack w="full" spacing={3}>
-      {!canInviteNewMember && (
+      {/* {!canInviteNewMember && (
         <UnlockPlanAlertInfo contentLabel={scopedT('unlockBanner.label')} />
-      )}
+      )} */}
       {isDefined(seatsLimit) && (
         <Heading fontSize="2xl">
           {scopedT('title')}{' '}

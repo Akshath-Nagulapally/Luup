@@ -25,7 +25,7 @@ export const createTypebot = authenticatedProcedure
       method: 'POST',
       path: '/typebots',
       protect: true,
-      summary: 'Create a typebot',
+      summary: 'Create a Bot',
       tags: ['Typebot'],
     },
   })
@@ -72,7 +72,7 @@ export const createTypebot = authenticatedProcedure
       data: {
         version: '5',
         workspaceId,
-        name: typebot.name ?? 'My typebot',
+        name: typebot.name ?? 'My Bot',
         icon: typebot.icon,
         selectedThemeTemplateId: typebot.selectedThemeTemplateId,
         groups: typebot.groups

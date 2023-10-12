@@ -108,7 +108,7 @@ export const ChangePlanForm = ({ workspace }: Props) => {
 
   return (
     <Stack spacing={6}>
-      <HStack maxW="500px">
+      {/* <HStack maxW="500px">
         <StripeClimateLogo />
         <Text fontSize="xs" color="gray.500">
           {scopedT('contribution.preLink')}{' '}
@@ -116,7 +116,7 @@ export const ChangePlanForm = ({ workspace }: Props) => {
             {scopedT('contribution.link')}
           </TextLink>
         </Text>
-      </HStack>
+      </HStack> */}
       {!workspace.stripeId && (
         <ParentModalProvider>
           <PreCheckoutModal
@@ -166,12 +166,12 @@ export const ChangePlanForm = ({ workspace }: Props) => {
         </Stack>
       )}
 
-      <Text color="gray.500">
+      {/* <Text color="gray.500">
         {scopedT('customLimit.preLink')}{' '}
         <TextLink href={'https://typebot.io/enterprise-lead-form'} isExternal>
           {scopedT('customLimit.link')}
         </TextLink>
-      </Text>
+      </Text> */}
     </Stack>
   )
 }

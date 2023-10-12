@@ -103,7 +103,7 @@ export const SignInPage = ({ type }: Props) => {
         </Text>
       )}
       <SignInForm defaultEmail={query.g?.toString()} />
-      {type === 'signup' ? (
+      {/* {type === 'signup' ? (
         <Text fontSize="sm" maxW="400px" textAlign="center">
           {scopedT('register.aggreeToTerms', {
             termsOfService: (
@@ -118,7 +118,7 @@ export const SignInPage = ({ type }: Props) => {
             ),
           })}
         </Text>
-      ) : null}
+      ) : null} */}
     </VStack>
   )
 }
