@@ -43,6 +43,7 @@ const baseEnv = {
     .transform((string) => string.split(',')) ,
     NEXT_PUBLIC_VIEWER_INTERNAL_URL: z.string().url().optional(),
     NEXT_PUBLIC_ONBOARDING_TYPEBOT_ID: z.string().min(1).optional(),
+    NEXT_PUBLIC_BOT_FILE_UPLOAD_MAX_SIZE: z.coerce.number().optional(),
   },
   runtimeEnv: {
     NEXT_PUBLIC_E2E_TEST: getRuntimeVariable('NEXT_PUBLIC_E2E_TEST'),
@@ -54,6 +55,9 @@ const baseEnv = {
     ),
     NEXT_PUBLIC_ONBOARDING_TYPEBOT_ID: getRuntimeVariable(
       'NEXT_PUBLIC_ONBOARDING_TYPEBOT_ID'
+    ),
+    NEXT_PUBLIC_BOT_FILE_UPLOAD_MAX_SIZE: getRuntimeVariable(
+      'NEXT_PUBLIC_BOT_FILE_UPLOAD_MAX_SIZE'
     ),
   },
 }
@@ -332,7 +336,20 @@ export const env = createEnv({
     ...sentryEnv.runtimeEnv,
     ...posthogEnv.runtimeEnv,
   },
-  skipValidation: typeof window !== 'undefined' && window.__ENV === undefined,
+  skipValidation:
+    process.env.SKIP_ENV_CHECK === 'true' ||
+    (typeof window !== 'undefined' && window.__ENV === undefined),
+  onValidationError(error) {
+    console.error(
+      '❌ Invalid environment variables:',
+      error.flatten().fieldErrors
+    )
+    throw new Error(
+      `Invalid environment variables: ${JSON.stringify(
+        error.flatten().fieldErrors
+      )}`
+    )
+  },
   onInvalidAccess: (variable: string) => {
     throw new Error(
       `❌ Attempted to access a server-side environment variable on the client: ${variable}`

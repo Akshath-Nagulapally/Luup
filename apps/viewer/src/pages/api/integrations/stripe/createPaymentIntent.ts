@@ -1,11 +1,11 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import {
   badRequest,
-  decrypt,
   forbidden,
   initMiddleware,
   methodNotAllowed,
 } from '@typebot.io/lib/api'
+import { decrypt } from '@typebot.io/lib/api/encryption/decrypt'
 import Stripe from 'stripe'
 
 import Cors from 'cors'
@@ -14,8 +14,8 @@ import {
   StripeCredentials,
   Variable,
 } from '@typebot.io/schemas'
-import prisma from '@/lib/prisma'
-import { parseVariables } from '@/features/variables/parseVariables'
+import prisma from '@typebot.io/lib/prisma'
+import { parseVariables } from '@typebot.io/bot-engine/variables/parseVariables'
 
 const cors = initMiddleware(Cors())
 

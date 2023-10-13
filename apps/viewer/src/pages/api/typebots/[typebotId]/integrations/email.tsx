@@ -8,16 +8,17 @@ import { NextApiRequest, NextApiResponse } from 'next'
 import { createTransport, getTestMessageUrl } from 'nodemailer'
 import { isDefined, isEmpty, isNotDefined, omit } from '@typebot.io/lib'
 import { parseAnswers } from '@typebot.io/lib/results'
-import { methodNotAllowed, initMiddleware, decrypt } from '@typebot.io/lib/api'
+import { methodNotAllowed, initMiddleware } from '@typebot.io/lib/api'
+import { decrypt } from '@typebot.io/lib/api/encryption/decrypt'
 
 import Cors from 'cors'
 import Mail from 'nodemailer/lib/mailer'
 import { DefaultBotNotificationEmail } from '@typebot.io/emails'
 import { render } from '@faire/mjml-react/utils/render'
-import prisma from '@/lib/prisma'
-import { saveErrorLog } from '@/features/logs/saveErrorLog'
-import { saveSuccessLog } from '@/features/logs/saveSuccessLog'
+import prisma from '@typebot.io/lib/prisma'
 import { env } from '@typebot.io/env'
+import { saveErrorLog } from '@typebot.io/bot-engine/logs/saveErrorLog'
+import { saveSuccessLog } from '@typebot.io/bot-engine/logs/saveSuccessLog'
 
 const cors = initMiddleware(Cors())
 

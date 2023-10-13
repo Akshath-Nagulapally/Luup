@@ -5,9 +5,7 @@ type UploadFileProps = {
   files: {
     file: File
     input: {
-      typebotId: string
-      blockId: string
-      resultId: string
+      sessionId: string
       fileName: string
     }
   }[]
@@ -28,6 +26,7 @@ export const uploadFiles = async ({
     i += 1
     const { data } = await sendRequest<{
       presignedUrl: string
+      formData: Record<string, string>
       fileUrl: string
     }>({
       method: 'POST',
@@ -40,9 +39,14 @@ export const uploadFiles = async ({
 
     if (!data?.presignedUrl) continue
     else {
+      const formData = new FormData()
+      Object.entries(data.formData).forEach(([key, value]) => {
+        formData.append(key, value)
+      })
+      formData.append('file', file)
       const upload = await fetch(data.presignedUrl, {
-        method: 'PUT',
-        body: file,
+        method: 'POST',
+        body: formData,
       })
 
       if (!upload.ok) continue

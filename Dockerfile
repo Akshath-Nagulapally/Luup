@@ -27,8 +27,7 @@ RUN pnpm install
 COPY --from=pruner /app/out/full/ .
 COPY turbo.json turbo.json
 
-ENV ENCRYPTION_SECRET=encryption_secret_placeholder123 DATABASE_URL=postgresql://postgres:typebot@typebot-db:5432/typebot NEXTAUTH_URL=http://localhost:3000 NEXT_PUBLIC_VIEWER_URL=http://localhost:3001
-RUN pnpm turbo run build --filter=${SCOPE}...
+RUN SKIP_ENV_CHECK=true pnpm turbo run build --filter=${SCOPE}...
 
 FROM base AS runner
 WORKDIR /app
@@ -53,9 +52,7 @@ COPY --from=builder /app/node_modules/.bin/prisma ./node_modules/.bin/prisma
 RUN ./node_modules/.bin/prisma generate --schema=packages/prisma/postgresql/schema.prisma;
 
 COPY scripts/${SCOPE}-entrypoint.sh ./
-COPY scripts/wait-for-it.sh ./
 RUN chmod +x ./${SCOPE}-entrypoint.sh
-RUN chmod +x ./wait-for-it.sh
 ENTRYPOINT ./${SCOPE}-entrypoint.sh
 
 EXPOSE 3000

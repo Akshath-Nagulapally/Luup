@@ -1,4 +1,4 @@
-import prisma from '@/lib/prisma'
+import prisma from '@typebot.io/lib/prisma'
 import { Plan } from '@typebot.io/prisma'
 import {
   Block,
@@ -9,14 +9,26 @@ import {
 
 export const sanitizeSettings = (
   settings: Typebot['settings'],
-  workspacePlan: Plan
+  workspacePlan: Plan,
+  mode: 'create' | 'update'
 ): Typebot['settings'] => ({
   ...settings,
   general: {
     ...settings.general,
     isBrandingEnabled:
-      workspacePlan === Plan.FREE ? false : settings.general.isBrandingEnabled,
+      workspacePlan === Plan.FREE ? true : settings.general.isBrandingEnabled,
   },
+  whatsApp: settings.whatsApp
+    ? {
+        ...settings.whatsApp,
+        isEnabled:
+          mode === 'create'
+            ? false
+            : workspacePlan === Plan.FREE
+            ? false
+            : settings.whatsApp.isEnabled,
+      }
+    : undefined,
 })
 
 export const sanitizeGroups =

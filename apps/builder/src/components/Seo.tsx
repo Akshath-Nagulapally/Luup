@@ -10,7 +10,7 @@ export const Seo = ({
   currentUrl?: string
   imagePreviewUrl?: string
 }) => {
-  const formattedTitle = `${title} | BterAi`
+  const formattedTitle = `${title} | Quadz`
 
   return (
     <Head>

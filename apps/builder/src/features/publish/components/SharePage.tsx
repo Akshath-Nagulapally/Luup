@@ -20,7 +20,7 @@ import { integrationsList } from './embeds/EmbedButton'
 import { useTypebot } from '@/features/editor/providers/TypebotProvider'
 import { LockTag } from '@/features/billing/components/LockTag'
 import { UpgradeButton } from '@/features/billing/components/UpgradeButton'
-import { isProPlan } from '@/features/billing/helpers/isProPlan'
+import { hasProPerks } from '@/features/billing/helpers/hasProPerks'
 import { CustomDomainsDropdown } from '@/features/customDomains/components/CustomDomainsDropdown'
 import { TypebotHeader } from '@/features/editor/components/TypebotHeader'
 import { parseDefaultPublicId } from '../helpers/parseDefaultPublicId'
@@ -95,7 +95,7 @@ export const SharePage = () => {
         <Stack maxW="1000px" w="full" pt="10" spacing={10}>
           <Stack spacing={4} align="flex-start">
             <Heading fontSize="2xl" as="h1">
-              Your typebot link
+              Your bot link
             </Heading>
             {typebot && (
               <EditableUrl
@@ -130,7 +130,7 @@ export const SharePage = () => {
             {isNotDefined(typebot?.customDomain) &&
             env.NEXT_PUBLIC_VERCEL_VIEWER_PROJECT_NAME ? (
               <>
-                {isProPlan(workspace) ? (
+                {hasProPerks(workspace) ? (
                   <CustomDomainsDropdown
                     onCustomDomainSelect={handleCustomDomainChange}
                   />
@@ -138,6 +138,7 @@ export const SharePage = () => {
                   <UpgradeButton
                     colorScheme="gray"
                     limitReachedType={t('billing.limitMessage.customDomain')}
+                    excludedPlans={[Plan.STARTER]}
                   >
                     <Text mr="2">Add my domain</Text>{' '}
                     <LockTag plan={Plan.PRO} />
@@ -149,7 +150,7 @@ export const SharePage = () => {
 
           <Stack spacing={4}>
             <Heading fontSize="2xl" as="h1">
-              Embed your typebot
+              Embed your bot
             </Heading>
             <Wrap spacing={7}>
               {integrationsList.map((IntegrationButton, idx) => (

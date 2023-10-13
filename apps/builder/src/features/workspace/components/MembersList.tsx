@@ -5,7 +5,7 @@ import {
   SkeletonText,
   Stack,
 } from '@chakra-ui/react'
-import { UnlockPlanAlertInfo } from '@/components/UnlockPlanAlertInfo'
+// import { UnlockPlanAlertInfo } from '@/components/UnlockPlanAlertInfo'
 import { WorkspaceInvitation, WorkspaceRole } from '@typebot.io/prisma'
 import React from 'react'
 import { getSeatsLimit, isSeatsLimitReached } from '@typebot.io/lib/pricing'
@@ -102,9 +102,9 @@ export const MembersList = () => {
 
   return (
     <Stack w="full" spacing={3}>
-      {!canInviteNewMember && (
+      {/* {!canInviteNewMember && (
         <UnlockPlanAlertInfo contentLabel={scopedT('unlockBanner.label')} />
-      )}
+      )} */}
       {isDefined(seatsLimit) && (
         <Heading fontSize="2xl">
           {scopedT('title')}{' '}

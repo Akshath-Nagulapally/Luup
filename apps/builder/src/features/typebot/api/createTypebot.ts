@@ -1,4 +1,4 @@
-import prisma from '@/lib/prisma'
+import prisma from '@typebot.io/lib/prisma'
 import { authenticatedProcedure } from '@/helpers/server/trpc'
 import { TRPCError } from '@trpc/server'
 import { Plan, WorkspaceRole } from '@typebot.io/prisma'
@@ -25,7 +25,7 @@ export const createTypebot = authenticatedProcedure
       method: 'POST',
       path: '/typebots',
       protect: true,
-      summary: 'Create a typebot',
+      summary: 'Create a Bot',
       tags: ['Typebot'],
     },
   })
@@ -72,7 +72,7 @@ export const createTypebot = authenticatedProcedure
       data: {
         version: '5',
         workspaceId,
-        name: typebot.name ?? 'My typebot',
+        name: typebot.name ?? 'My Bot',
         icon: typebot.icon,
         selectedThemeTemplateId: typebot.selectedThemeTemplateId,
         groups: typebot.groups
@@ -80,7 +80,7 @@ export const createTypebot = authenticatedProcedure
           : defaultGroups(),
         theme: typebot.theme ? typebot.theme : defaultTheme,
         settings: typebot.settings
-          ? sanitizeSettings(typebot.settings, workspace.plan)
+          ? sanitizeSettings(typebot.settings, workspace.plan, 'create')
           : defaultSettings({
               isBrandingEnabled: workspace.plan === Plan.FREE,
             }),

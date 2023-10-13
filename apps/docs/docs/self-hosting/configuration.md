@@ -11,18 +11,19 @@ Parameters marked with <Asterix/> are required.
 
 ## General
 
-| Parameter                         | Default | Description                                                                                                                                                                                                                                 |
-| --------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DATABASE_URL <Asterix/>           |         | The database URL                                                                                                                                                                                                                            |
-| ENCRYPTION_SECRET <Asterix/>      |         | A 256-bit key used to encrypt sensitive data. It is strongly recommended to [generate](https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx) a new one. The secret should be the same between builder and viewer. |
-| NEXTAUTH_URL <Asterix/>           |         | The builder base URL. Should be the publicly accessible URL (i.e. `https://typebot.domain.com`)                                                                                                                                             |
-| NEXT_PUBLIC_VIEWER_URL <Asterix/> |         | The viewer base URL. Should be the publicly accessible URL (i.e. `https://bot.domain.com`)                                                                                                                                                  |
-| ADMIN_EMAIL                       |         | The email that will get an `UNLIMITED` plan on user creation. The associated user will be able to bypass database rules.                                                                                                                    |
-| NEXTAUTH_URL_INTERNAL             |         | The internal builder base URL. You have to set it only when `NEXTAUTH_URL` can't be reached by your builder container / server. For a docker deployment, you should set it to `http://localhost:3000`.                                      |
-| DEFAULT_WORKSPACE_PLAN            | FREE    | Default workspace plan on user creation or when a user creates a new workspace. Possible values are `FREE`, `STARTER`, `PRO`, `LIFETIME`, `UNLIMITED`. The default plan for admin user is `UNLIMITED`                                       |
-| DISABLE_SIGNUP                    | false   | Disable new user sign ups. Invited users are still able to sign up.                                                                                                                                                                         |
-| NEXT_PUBLIC_ONBOARDING_TYPEBOT_ID |         | Typebot ID used for the onboarding. Onboarding page is skipped if not provided.                                                                                                                                                             |
-| DEBUG                             | false   | If enabled, the server will print valuable logs to debug config issues.                                                                                                                                                                     |
+| Parameter                            | Default | Description                                                                                                                                                                                                                                 |
+| ------------------------------------ | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| DATABASE_URL <Asterix/>              |         | The database URL                                                                                                                                                                                                                            |
+| ENCRYPTION_SECRET <Asterix/>         |         | A 256-bit key used to encrypt sensitive data. It is strongly recommended to [generate](https://www.allkeysgenerator.com/Random/Security-Encryption-Key-Generator.aspx) a new one. The secret should be the same between builder and viewer. |
+| NEXTAUTH_URL <Asterix/>              |         | The builder base URL. Should be the publicly accessible URL (i.e. `https://typebot.domain.com`)                                                                                                                                             |
+| NEXT_PUBLIC_VIEWER_URL <Asterix/>    |         | The viewer base URL. Should be the publicly accessible URL (i.e. `https://bot.domain.com`)                                                                                                                                                  |
+| ADMIN_EMAIL                          |         | The email that will get an `UNLIMITED` plan on user creation. The associated user will be able to bypass database rules.                                                                                                                    |
+| NEXTAUTH_URL_INTERNAL                |         | The internal builder base URL. You have to set it only when `NEXTAUTH_URL` can't be reached by your builder container / server. For a docker deployment, you should set it to `http://localhost:3000`.                                      |
+| DEFAULT_WORKSPACE_PLAN               | FREE    | Default workspace plan on user creation or when a user creates a new workspace. Possible values are `FREE`, `STARTER`, `PRO`, `LIFETIME`, `UNLIMITED`. The default plan for admin user is `UNLIMITED`                                       |
+| DISABLE_SIGNUP                       | false   | Disable new user sign ups. Invited users are still able to sign up.                                                                                                                                                                         |
+| NEXT_PUBLIC_ONBOARDING_TYPEBOT_ID    |         | Typebot ID used for the onboarding. Onboarding page is skipped if not provided.                                                                                                                                                             |
+| DEBUG                                | false   | If enabled, the server will print valuable logs to debug config issues.                                                                                                                                                                     |
+| NEXT_PUBLIC_BOT_FILE_UPLOAD_MAX_SIZE |         | Limits the size of each file that can be uploaded in the bots (i.e. Set `10` to limit the file upload to 10MB)                                                                                                                              |
 
 ## Email (Auth, notifications)
 
@@ -146,35 +147,7 @@ Used for uploading images, videos, etc... It can be any S3 compatible object sto
 
 Note that for AWS S3, your endpoint is usually: `s3.<S3_REGION>.amazonaws.com`
 
-Your bucket must have the following policy that tells S3 to allow public read when an object is located under the public folder:
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicRead",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::<BUCKET_NAME>/public/*"
-    }
-  ]
-}
-```
-
-You also need to configure CORS so that an object can be uploaded from the browser:
-
-```json
-[
-  {
-    "AllowedHeaders": ["*"],
-    "AllowedMethods": ["PUT", "POST"],
-    "AllowedOrigins": ["*"],
-    "ExposeHeaders": ["ETag"]
-  }
-]
-```
+In order to function properly, your S3 bucket must be configured. Make sure to read through the [S3 configuration](./guides/s3) doc.
 
 ## Giphy (GIF picker)
 
@@ -200,24 +173,9 @@ In order to be able to test your bot on WhatsApp from the Preview drawer, you ne
 <details><summary><h4>Requirements</h4></summary>
 <p>
 
-### Create a Facebook Business account
+## 1. [Create a WhatsApp Meta app](../embed/whatsapp/create-meta-app)
 
-1. Head over to https://business.facebook.com and log in
-2. Create a new business account on the left side bar
-
-:::note
-It is possible that Meta directly restricts your newly created Business account. In that case, make sure to verify your identity to proceed.
-:::
-
-### Create a Meta app
-
-1. Head over to https://developers.facebook.com/apps
-2. Click on Create App
-3. Give it any name and select `Business` type
-4. Select your newly created Business Account
-5. On the app page, set up the `WhatsApp` product
-
-### Get the System User token
+## 2. Get the System User token
 
 1. Go to your [System users page](https://business.facebook.com/settings/system-users) and create a new system user that has access to the related.
 
@@ -227,7 +185,7 @@ It is possible that Meta directly restricts your newly created Business account.
 2. The generated token will be used as `META_SYSTEM_USER_TOKEN` in your viewer configuration.
 3. Click on `Add assets`. Under `Apps`, look for your app, select it and check `Manage app`
 
-### Get the phone number ID
+## 3. Get the phone number ID
 
 1. Go to your WhatsApp Dev Console
 
@@ -236,12 +194,12 @@ It is possible that Meta directly restricts your newly created Business account.
 2. Add your phone number by clicking on the `Add phone number` button.
 3. Select the newly created phone number in the `From` dropdown list and you will see right below the associated `Phone number ID` This will be used as `WHATSAPP_PREVIEW_FROM_PHONE_NUMBER_ID` in your viewer configuration.
 
-### Set up the webhook
+## 4. Set up the webhook
 
 1. Head over to `Quickstart > Configuration`. Edit the webhook URL to `$NEXTAUTH_URL/api/v1/whatsapp/preview/webhook`. Set the Verify token to `$ENCRYPTION_SECRET` and click on `Verify and save`.
 2. Add the `messages` webhook field.
 
-### Set up the message template
+## 5. Set up the message template
 
 1. Head over to `Messaging > Message Templates` and click on `Create Template`
 2. Select the `Utility` category

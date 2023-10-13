@@ -29,7 +29,10 @@ export const GettingStartedModal = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   useEffect(() => {
-    if (query.isFirstBot) onOpen()
+    if (query.isFirstBot) {
+      console.log("is open",onOpen);
+      // onOpen()
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 

@@ -1,6 +1,6 @@
 import { Stack, HStack, Text, Switch, Tag } from '@chakra-ui/react'
 import { Plan } from '@typebot.io/prisma'
-import { TextLink } from '@/components/TextLink'
+// import { TextLink } from '@/components/TextLink'
 import { useToast } from '@/hooks/useToast'
 import { trpc } from '@/lib/trpc'
 import { guessIfUserIsEuropean } from '@typebot.io/lib/pricing'
@@ -12,13 +12,14 @@ import { useUser } from '@/features/account/hooks/useUser'
 import { StarterPlanPricingCard } from './StarterPlanPricingCard'
 import { ProPlanPricingCard } from './ProPlanPricingCard'
 import { useScopedI18n } from '@/locales'
-import { StripeClimateLogo } from './StripeClimateLogo'
+// import { StripeClimateLogo } from './StripeClimateLogo'
 
 type Props = {
   workspace: Workspace
+  excludedPlans?: ('STARTER' | 'PRO')[]
 }
 
-export const ChangePlanForm = ({ workspace }: Props) => {
+export const ChangePlanForm = ({ workspace, excludedPlans }: Props) => {
   const scopedT = useScopedI18n('billing')
 
   const { user } = useUser()
@@ -67,24 +68,16 @@ export const ChangePlanForm = ({ workspace }: Props) => {
   const handlePayClick = async ({
     plan,
     selectedChatsLimitIndex,
-    selectedStorageLimitIndex,
   }: {
     plan: 'STARTER' | 'PRO'
     selectedChatsLimitIndex: number
-    selectedStorageLimitIndex: number
   }) => {
-    if (
-      !user ||
-      selectedChatsLimitIndex === undefined ||
-      selectedStorageLimitIndex === undefined
-    )
-      return
+    if (!user || selectedChatsLimitIndex === undefined) return
 
     const newSubscription = {
       plan,
       workspaceId: workspace.id,
       additionalChats: selectedChatsLimitIndex,
-      additionalStorage: selectedStorageLimitIndex,
       currency:
         data?.subscription?.currency ??
         (guessIfUserIsEuropean() ? 'eur' : 'usd'),
@@ -108,7 +101,7 @@ export const ChangePlanForm = ({ workspace }: Props) => {
 
   return (
     <Stack spacing={6}>
-      <HStack maxW="500px">
+      {/* <HStack maxW="500px">
         <StripeClimateLogo />
         <Text fontSize="xs" color="gray.500">
           {scopedT('contribution.preLink')}{' '}
@@ -116,7 +109,7 @@ export const ChangePlanForm = ({ workspace }: Props) => {
             {scopedT('contribution.link')}
           </TextLink>
         </Text>
-      </HStack>
+      </HStack> */}
       {!workspace.stripeId && (
         <ParentModalProvider>
           <PreCheckoutModal
@@ -141,37 +134,41 @@ export const ChangePlanForm = ({ workspace }: Props) => {
             </HStack>
           </HStack>
           <HStack alignItems="stretch" spacing="4" w="full">
-            <StarterPlanPricingCard
-              workspace={workspace}
-              currentSubscription={{ isYearly: data.subscription?.isYearly }}
-              onPayClick={(props) =>
-                handlePayClick({ ...props, plan: Plan.STARTER })
-              }
-              isYearly={isYearly}
-              isLoading={isUpdatingSubscription}
-              currency={data.subscription?.currency}
-            />
+            {excludedPlans?.includes('STARTER') ? null : (
+              <StarterPlanPricingCard
+                workspace={workspace}
+                currentSubscription={{ isYearly: data.subscription?.isYearly }}
+                onPayClick={(props) =>
+                  handlePayClick({ ...props, plan: Plan.STARTER })
+                }
+                isYearly={isYearly}
+                isLoading={isUpdatingSubscription}
+                currency={data.subscription?.currency}
+              />
+            )}
 
-            <ProPlanPricingCard
-              workspace={workspace}
-              currentSubscription={{ isYearly: data.subscription?.isYearly }}
-              onPayClick={(props) =>
-                handlePayClick({ ...props, plan: Plan.PRO })
-              }
-              isYearly={isYearly}
-              isLoading={isUpdatingSubscription}
-              currency={data.subscription?.currency}
-            />
+            {excludedPlans?.includes('PRO') ? null : (
+              <ProPlanPricingCard
+                workspace={workspace}
+                currentSubscription={{ isYearly: data.subscription?.isYearly }}
+                onPayClick={(props) =>
+                  handlePayClick({ ...props, plan: Plan.PRO })
+                }
+                isYearly={isYearly}
+                isLoading={isUpdatingSubscription}
+                currency={data.subscription?.currency}
+              />
+            )}
           </HStack>
         </Stack>
       )}
 
-      <Text color="gray.500">
+      {/* <Text color="gray.500">
         {scopedT('customLimit.preLink')}{' '}
         <TextLink href={'https://typebot.io/enterprise-lead-form'} isExternal>
           {scopedT('customLimit.link')}
         </TextLink>
-      </Text>
+      </Text> */}
     </Stack>
   )
 }

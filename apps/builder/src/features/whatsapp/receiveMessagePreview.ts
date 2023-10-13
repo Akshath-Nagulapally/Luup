@@ -1,7 +1,7 @@
 import { publicProcedure } from '@/helpers/server/trpc'
 import { whatsAppWebhookRequestBodySchema } from '@typebot.io/schemas/features/whatsapp'
 import { z } from 'zod'
-import { resumeWhatsAppFlow } from '@typebot.io/viewer/src/features/whatsApp/helpers/resumeWhatsAppFlow'
+import { resumeWhatsAppFlow } from '@typebot.io/bot-engine/whatsapp/resumeWhatsAppFlow'
 import { isNotDefined } from '@typebot.io/lib'
 import { TRPCError } from '@trpc/server'
 import { env } from '@typebot.io/env'
@@ -31,11 +31,11 @@ export const receiveMessagePreview = publicProcedure
     if (isNotDefined(receivedMessage)) return { message: 'No message found' }
     const contactName =
       entry.at(0)?.changes.at(0)?.value?.contacts?.at(0)?.profile?.name ?? ''
-    const contactPhoneNumber = '+' + receivedMessage.from
+    const contactPhoneNumber =
+      entry.at(0)?.changes.at(0)?.value?.messages?.at(0)?.from ?? ''
     return resumeWhatsAppFlow({
       receivedMessage,
-      sessionId: `wa-${receivedMessage.from}-preview`,
-      phoneNumberId: env.WHATSAPP_PREVIEW_FROM_PHONE_NUMBER_ID,
+      sessionId: `wa-preview-${receivedMessage.from}`,
       contact: {
         name: contactName,
         phoneNumber: contactPhoneNumber,

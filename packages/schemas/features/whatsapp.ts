@@ -142,6 +142,9 @@ export const whatsAppWebhookRequestBodySchema = z.object({
       changes: z.array(
         z.object({
           value: z.object({
+            metadata: z.object({
+              phone_number_id: z.string(),
+            }),
             contacts: z
               .array(
                 z.object({
@@ -188,9 +191,17 @@ const startConditionSchema = z.object({
 })
 
 export const whatsAppSettingsSchema = z.object({
-  credentialsId: z.string().optional(),
+  isEnabled: z.boolean().optional(),
   startCondition: startConditionSchema.optional(),
+  sessionExpiryTimeout: z
+    .number()
+    .max(48)
+    .min(0.01)
+    .optional()
+    .describe('Expiration delay in hours after latest interaction'),
 })
+
+export const defaultSessionExpiryTimeout = 4
 
 export type WhatsAppIncomingMessage = z.infer<typeof incomingMessageSchema>
 export type WhatsAppSendingMessage = z.infer<typeof sendingMessageSchema>

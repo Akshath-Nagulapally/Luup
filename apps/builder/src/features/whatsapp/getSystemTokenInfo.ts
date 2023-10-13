@@ -3,8 +3,8 @@ import { z } from 'zod'
 import got from 'got'
 import { TRPCError } from '@trpc/server'
 import { WhatsAppCredentials } from '@typebot.io/schemas/features/whatsapp'
-import prisma from '@/lib/prisma'
-import { decrypt } from '@typebot.io/lib/api/encryption'
+import prisma from '@typebot.io/lib/prisma'
+import { decrypt } from '@typebot.io/lib/api/encryption/decrypt'
 
 const inputSchema = z.object({
   token: z.string().optional(),
