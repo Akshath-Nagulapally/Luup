@@ -14,6 +14,7 @@ export const startBotFlow = async ({
   state,
   startGroupId,
 }: Props): Promise<ChatReply & { newSessionState: SessionState }> => {
+  console.log("start bot flow entered",JSON.stringify(state));
   let newSessionState = state
   if (startGroupId) {
     const group = state.typebotsQueue[0].typebot.groups.find(

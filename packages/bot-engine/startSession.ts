@@ -46,6 +46,7 @@ export const startSession = async ({
   userId,
   initialSessionState,
 }: Props): Promise<ChatReply & { newSessionState: SessionState }> => {
+  console.log("start session called");
   if (!startParams)
     throw new TRPCError({
       code: 'BAD_REQUEST',
