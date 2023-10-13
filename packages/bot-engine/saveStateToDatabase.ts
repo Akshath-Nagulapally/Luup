@@ -21,6 +21,7 @@ export const saveStateToDatabase = async ({
   clientSideActions,
   forceCreateSession,
 }: Props) => {
+  console.log("save state to database called",id,  input );
   const containsSetVariableClientSideAction = clientSideActions?.some(
     (action) => action.expectsDedicatedReply
   )
@@ -40,9 +41,9 @@ export const saveStateToDatabase = async ({
       : await createSession({ id, state })
 
   if (!resultId) return session
-
+  
   const answers = state.typebotsQueue[0].answers
-
+  
   await upsertResult({
     resultId,
     typebot: state.typebotsQueue[0].typebot,

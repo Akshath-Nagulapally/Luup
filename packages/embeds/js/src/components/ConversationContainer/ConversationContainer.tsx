@@ -61,6 +61,7 @@ type Props = {
 }
 
 export const ConversationContainer = (props: Props) => {
+  
   let chatContainer: HTMLDivElement | undefined
   const [chatChunks, setChatChunks] = createSignal<ChatChunkType[]>([
     {
@@ -135,6 +136,7 @@ export const ConversationContainer = (props: Props) => {
     message: string | undefined,
     clientLogs?: SendMessageInput['clientLogs']
   ) => {
+    
     if (clientLogs) props.onNewLogs?.(clientLogs)
     setHasError(false)
     const currentInputBlock = [...chatChunks()].pop()?.input

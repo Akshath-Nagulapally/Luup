@@ -29,8 +29,8 @@ export const sendMessageV1 = publicProcedure
       input: { sessionId, message, startParams, clientLogs },
       ctx: { user },
     }) => {
+      console.log("send message v1 called");
       const session = sessionId ? await getSession(sessionId) : null
-
       const isSessionExpired =
         session &&
         isDefined(session.state.expiryTimeout) &&

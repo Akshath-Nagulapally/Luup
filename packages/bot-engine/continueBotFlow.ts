@@ -39,8 +39,11 @@ export const continueBotFlow = async (
   reply: string | undefined,
   { state, version }: Params
 ): Promise<ChatReply & { newSessionState: SessionState }> => {
+  console.log("replyy",reply);
+  
   let newSessionState = { ...state }
-
+  console.log("new session state", JSON.stringify(newSessionState) );
+  console.log("value of current block", !newSessionState.currentBlock );
   if (!newSessionState.currentBlock) return startBotFlow({ state, version })
 
   const group = state.typebotsQueue[0].typebot.groups.find(
@@ -158,7 +161,7 @@ export const continueBotFlow = async (
     version,
     state: newSessionState,
   })
-
+  console.log("chat reply",JSON.stringify(chatReply));
   return {
     ...chatReply,
     lastMessageNewFormat: formattedReply !== reply ? formattedReply : undefined,
@@ -231,6 +234,7 @@ const parseDefaultRetryMessage = (block: InputBlock): string => {
 const saveAnswer =
   (state: SessionState, block: InputBlock, itemId?: string) =>
   async (reply: string): Promise<SessionState> => {
+    
     await upsertAnswer({
       block,
       answer: {
