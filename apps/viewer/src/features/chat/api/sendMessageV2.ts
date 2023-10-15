@@ -37,6 +37,7 @@ export const sendMessageV2 = publicProcedure
         },
         body : JSON.stringify({ username : "prateek" , password : "1234" })
       } );
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       loginData = await loginData.json();
       console.log("loginData",loginData)
@@ -45,26 +46,33 @@ export const sendMessageV2 = publicProcedure
           method : "GET" ,
           headers : {
             "Content-Type" : "application/json",
+             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
             "accesstoken" : loginData?.accessToken
           }
         } );
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         ticketdata = await ticketdata.json();
         console.log("ticketData",ticketdata); 
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        let sessionTicket = ticketdata.filter( ticket => ticket.subject == `Convo for user with sessionId ${sessionId}` );
+        const  sessionTicket = ticketdata.filter( ticket => ticket.subject == `Convo for user with sessionId ${sessionId}` );
         console.log("sessionTicket", sessionTicket );
         if ( sessionTicket.length > 0 ) {
-          let sessionTicketId = sessionTicket[0]._id;
+          const  sessionTicketId = sessionTicket[0]._id;
           console.log("session ticket id",sessionTicketId);
           let createNoteData = await fetch(`http://20.219.184.176:8118/api/v1/tickets/addnote`,  {
             method : "POST",
             headers : {
               "Content-Type":  "application/json",
+               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
               "accesstoken" : loginData?.accessToken
             },
             body : JSON.stringify({ ticketid : String(sessionTicketId) , note : message  })
           } );
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           createNoteData = await createNoteData.json();
           console.log("createNoteData",createNoteData);
@@ -73,6 +81,8 @@ export const sendMessageV2 = publicProcedure
             method : "POST",
             headers : {
               "Content-Type":  "application/json",
+               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
               "accesstoken" : loginData?.accessToken
             },
             body : JSON.stringify({ subject: `Convo for user with sessionId ${sessionId}`,
@@ -82,20 +92,26 @@ export const sendMessageV2 = publicProcedure
             type: "65255315e70f67f0a789eb72",
             priority: "652556ce730de448f1c85074"  })
           } );
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           createTicketData = await createTicketData.json();
-          console.log("createTicketData",createTicketData);
-          console.log("create ticket data tickettt", createTicketData["ticket"]  );
-          console.log("create ticket data tickettt id", createTicketData["ticket"]["_id"] );
-          console.log("post data", JSON.stringify({ ticketid : String(createTicketData["ticket"]["_id"]) , note : message  }) );
+          // console.log("createTicketData",createTicketData);
+          // console.log("create ticket data tickettt", createTicketData["ticket"]  );
+          // console.log("create ticket data tickettt id", createTicketData["ticket"]["_id"] );
+          // console.log("post data", JSON.stringify({ ticketid : String(createTicketData["ticket"]["_id"]) , note : message  }) );
           let createNoteData = await fetch(`http://20.219.184.176:8118/api/v1/tickets/addnote`,  {
             method : "POST",
             headers : {
               "Content-Type":  "application/json",
+               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
               "accesstoken" : loginData?.accessToken
             },
+             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
             body : JSON.stringify({ ticketid : String(createTicketData["ticket"]["_id"]) , note : message  })
           } );
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           createNoteData = await createNoteData.json();
           console.log("createNoteData",createNoteData);
@@ -190,10 +206,14 @@ export const sendMessageV2 = publicProcedure
             clientSideActions,
           })
         console.log("messages after continue bot flow",JSON.stringify(messages));
-        let replyMessages = [];
+        const  replyMessages = [];
         for ( let i=0; i < messages.length;i++ ) {
          if ( messages[i].type == "text" ) {
+           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
             for ( let j=0; j < messages[i].content.richText.length ; j++ ) {
+               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
               replyMessages.push( messages[i].content.richText[j].children[0].children[0].text );
             }
          }
@@ -203,25 +223,32 @@ export const sendMessageV2 = publicProcedure
           method : "GET" ,
           headers : {
             "Content-Type" : "application/json",
+             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
             "accesstoken" : loginData?.accessToken
           }
         } );
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
         ticketdata = await ticketdata.json();
         console.log("ticketData",ticketdata); 
+         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-ignore
-        let sessionTicket = ticketdata.filter( ticket => ticket.subject == `Convo for user with sessionId ${sessionId}` );
-        let sessionTicketId = sessionTicket[0]._id;
+        const  sessionTicket = ticketdata.filter( ticket => ticket.subject == `Convo for user with sessionId ${sessionId}` );
+        const  sessionTicketId = sessionTicket[0]._id;
           console.log("session ticket id",sessionTicketId);
           let createNoteData = await fetch(`http://20.219.184.176:8118/api/v1/tickets/addnote`,  {
             method : "POST",
             headers : {
               "Content-Type":  "application/json",
+               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
               "accesstoken" : loginData?.accessToken
             },
             body : JSON.stringify({ ticketid : String(sessionTicketId) , note : replyMessages.join("\n")
             })
           } );
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           createNoteData = await createNoteData.json();
           console.log("createNoteData",createNoteData);
