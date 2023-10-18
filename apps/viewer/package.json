@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "dotenv -e ./.env -e ../../.env  -- next dev -p 3001",
     "build": "dotenv -e ./.env -e ../../.env -- next build",
-    "start": "dotenv -e ./.env -e ../../.env -- next start",
+    "start": "dotenv -e ./.env -e ../../.env -- next start -p 3001",
     "lint": "dotenv -e ./.env -e ../../.env -- next lint",
     "test": "dotenv -e ./.env -e ../../.env -- pnpm playwright test",
     "test:report": "pnpm playwright show-report"
