@@ -38,7 +38,7 @@ export const FlowwiseSettings = ({
     queryParams: [],
     headers: [],
     method: HttpMethod.POST,
-    url: `${ env.NEXT_PUBLIC_FLOWISE_URL ?  env.NEXT_PUBLIC_FLOWISE_URL[0] : ""}/api/v1/prediction/${id}`,
+    url: `${ env.NEXT_PUBLIC_INTERNAL_FLOWISE_ROUTE ?  env.NEXT_PUBLIC_INTERNAL_FLOWISE_ROUTE[0] : ""}/api/v1/prediction/${id}`,
     
    }
    setLocalWebhook(newWebhookObj);
@@ -52,7 +52,7 @@ export const FlowwiseSettings = ({
     const  userId = res.user.id;
     setUserId(userId);
     // localStorage.setItem("providerAccountId", userId);
-    fetch(`${ env.NEXT_PUBLIC_FLOWISE_URL ?  env.NEXT_PUBLIC_FLOWISE_URL[0] : ""}/api/v1/allchatflows/${userId}`).then( result => {
+    fetch(`${ env.NEXT_PUBLIC_INTERNAL_FLOWISE_ROUTE ?  env.NEXT_PUBLIC_INTERNAL_FLOWISE_ROUTE[0] : ""}/api/v1/allchatflows/${userId}`).then( result => {
       return result.json()
     } ).then( res => {
       console.log("chatflowss response", res );

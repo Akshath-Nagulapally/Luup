@@ -37,6 +37,10 @@ const baseEnv = {
     .string()
     .min(1)
     .transform((string) => string.split(',')) ,
+    NEXT_PUBLIC_INTERNAL_FLOWISE_ROUTE: z
+    .string()
+    .min(1)
+    .transform((string) => string.split(',')) ,
     NEXT_PUBLIC_BUILDER_URL :    z
     .string()
     .min(1)
@@ -50,6 +54,7 @@ const baseEnv = {
     NEXT_PUBLIC_VIEWER_URL: getRuntimeVariable('NEXT_PUBLIC_VIEWER_URL'),
     NEXT_PUBLIC_FLOWISE_URL : getRuntimeVariable('NEXT_PUBLIC_FLOWISE_URL'),
     NEXT_PUBLIC_BUILDER_URL : getRuntimeVariable('NEXT_PUBLIC_BUILDER_URL'),
+    NEXT_PUBLIC_INTERNAL_FLOWISE_ROUTE : getRuntimeVariable('NEXT_PUBLIC_INTERNAL_FLOWISE_ROUTE'),
     NEXT_PUBLIC_VIEWER_INTERNAL_URL: getRuntimeVariable(
       'NEXT_PUBLIC_VIEWER_INTERNAL_URL'
     ),
