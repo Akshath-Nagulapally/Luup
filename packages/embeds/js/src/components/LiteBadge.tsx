@@ -40,14 +40,14 @@ export const LiteBadge = (props: Props) => {
   return (
     <a
       ref={liteBadge}
-      href={'https://www.typebot.io/?utm_source=litebadge'}
+      href={'https://arthink.ai/'}
       target="_blank"
       rel="noopener noreferrer"
       class="lite-badge"
       id="lite-badge"
     >
       {/* <TypebotLogo /> */}
-      <span>Made with Quadz</span>
+      <span style={{ "font-size" : "8px" }} > Powered by Quadz</span>
     </a>
   )
 }

@@ -206,6 +206,7 @@ const BotContent = (props: BotContentProps) => {
   })
 
   return (
+    <>
     <div
       ref={botContainer}
       class={
@@ -226,8 +227,13 @@ const BotContent = (props: BotContentProps) => {
       <Show
         when={props.initialChatReply.typebot.settings.general.isBrandingEnabled}
       >
-        <LiteBadge botContainer={botContainer} />
+        
+        
       </Show>
     </div>
+    <div style={ { "margin-left" : "70%" } } >
+    <LiteBadge botContainer={botContainer} />
+    </div>
+    </>
   )
 }
