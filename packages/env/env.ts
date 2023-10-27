@@ -157,20 +157,10 @@ const stripeEnv = {
   server: {
     STRIPE_SECRET_KEY: z.string().min(1).optional(),
     STRIPE_WEBHOOK_SECRET: z.string().min(1).optional(),
-    STRIPE_STARTER_PRODUCT_ID: z.string().min(1).optional(),
-    STRIPE_STARTER_MONTHLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_STARTER_YEARLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_STARTER_CHATS_MONTHLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_STARTER_CHATS_YEARLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_STARTER_STORAGE_MONTHLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_STARTER_STORAGE_YEARLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_PRO_PRODUCT_ID: z.string().min(1).optional(),
-    STRIPE_PRO_MONTHLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_PRO_YEARLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_PRO_CHATS_MONTHLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_PRO_CHATS_YEARLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_PRO_STORAGE_MONTHLY_PRICE_ID: z.string().min(1).optional(),
-    STRIPE_PRO_STORAGE_YEARLY_PRICE_ID: z.string().min(1).optional(),
+    STRIPE_STARTER_PRICE_ID: z.string().min(1).optional(),
+    STRIPE_STARTER_CHATS_PRICE_ID: z.string().min(1).optional(),
+    STRIPE_PRO_PRICE_ID: z.string().min(1).optional(),
+    STRIPE_PRO_CHATS_PRICE_ID: z.string().min(1).optional(),
   },
   client: {
     NEXT_PUBLIC_STRIPE_PUBLIC_KEY: z.string().min(1).optional(),
@@ -193,6 +183,15 @@ const s3Env = {
     S3_REGION: z.string().min(1).optional(),
     S3_PUBLIC_CUSTOM_DOMAIN: z.string().url().optional(),
   },
+}
+const azureBlobEnv = {
+  server : {
+    AZURE_BLOB_ACCOUNT_NAME : z.string().min(1).optional(),
+    AZURE_BLOB_ACCOUNT_KEY : z.string().min(1).optional(),
+    AZURE_BLOB_CONNECTION_STRING : z.string().min(1).optional() ,
+    AZURE_BLOB_CONTAINER_NAME: z.string().min(1).optional(),
+    AZURE_BLOB_PUBLIC_CUSTOM_DOMAIN :  z.string().min(1).optional(),
+  }
 }
 
 const giphyEnv = {
@@ -308,6 +307,7 @@ export const env = createEnv({
     ...smtpEnv.server,
     ...googleEnv.server,
     ...stripeEnv.server,
+    ...azureBlobEnv.server,
     ...s3Env.server,
     ...vercelEnv.server,
     ...sleekPlanEnv.server,
