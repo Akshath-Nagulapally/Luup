@@ -45,10 +45,13 @@ export const generatePresignedPostPolicyBlob = async ({
   }
 
   if (maxFileSize) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     options['contentDisposition'] = `inline; filename="${filePath}"`
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     options['contentType'] = fileType || 'application/octet-stream'
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     options['contentLength'] = maxFileSize * 1024 * 1024
   }

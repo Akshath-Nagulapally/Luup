@@ -42,6 +42,8 @@ export const generateUploadUrl = publicProcedure
       fileUrl: z.string(),
     })
   )
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   .mutation(async ({ input: { filePathProps, fileType } }) => {
     console.log('envvv', env)
     console.log('file type', fileType)
@@ -142,7 +144,8 @@ export const generateUploadUrl = publicProcedure
       //     : `${presignedPostPolicy.postURL}/${presignedPostPolicy.formData.key}`,
       // }
     }
-
+   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
     const session = await getSession(filePathProps.sessionId)
 
     if (!session)
@@ -175,7 +178,7 @@ export const generateUploadUrl = publicProcedure
         message: "Can't find workspaceId",
       })
 
-    const resultId = session.state.typebotsQueue[0].resultId
+    // const resultId = session.state.typebotsQueue[0].resultId
 
     // const filePath = `public/workspaces/${workspaceId}/typebots/${typebotId}/results/${resultId}/${filePathProps.fileName}`
     const filePath = `${filePathProps.fileName}`

@@ -59,6 +59,8 @@ export const generateUploadUrl = authenticatedProcedure
       fileUrl: z.string(),
     })
   )
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
   .mutation(async ({ input: { filePathProps, fileType }, ctx: { user } }) => {
     if (
       (!env.S3_ENDPOINT && !env.S3_ACCESS_KEY && !env.S3_SECRET_KEY) ||

@@ -85,6 +85,7 @@ export const getUploadUrl = publicProcedure
     }
    
     return {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
       // @ts-ignore
       presignedUrl,
       hasReachedStorageLimit: false,

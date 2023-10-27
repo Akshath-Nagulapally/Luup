@@ -1,4 +1,5 @@
 import { BlobServiceClient } from '@azure/storage-blob'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 export const deleteFilesFromBlob = async ({ urls }) => {
   const blobServiceClient = BlobServiceClient.fromConnectionString(

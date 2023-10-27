@@ -1,4 +1,4 @@
-import { Stack, HStack, Text } from '@chakra-ui/react'
+import { Stack, HStack } from '@chakra-ui/react'
 import { Plan } from '@typebot.io/prisma'
 // import { TextLink } from '@/components/TextLink'
 import { useToast } from '@/hooks/useToast'
