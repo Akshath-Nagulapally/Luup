@@ -95,6 +95,7 @@ export const continueBotFlow = async (
       newSessionState = result.newSessionState
     }
   }
+  console.log("above formatted repy");
 
   let formattedReply: string | undefined
 
@@ -120,6 +121,7 @@ export const continueBotFlow = async (
       itemId
     )(formattedReply)
   }
+  console.log("after isInput block....")
 
   const groupHasMoreBlocks = blockIndex < group.blocks.length - 1
 
@@ -159,6 +161,8 @@ export const continueBotFlow = async (
       lastMessageNewFormat:
         formattedReply !== reply ? formattedReply : undefined,
     }
+   console.log("before execute groupppp");
+
 
   const chatReply = await executeGroup(nextGroup.group, {
     version,

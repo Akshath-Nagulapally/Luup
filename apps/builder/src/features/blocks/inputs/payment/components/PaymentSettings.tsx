@@ -19,6 +19,7 @@ import {
 import React, { ChangeEvent } from 'react'
 import { currencies } from '../currencies'
 import { StripeConfigModal } from './StripeConfigModal'
+import { RazorPayConfigModal  } from "./RazorPayXConfigModal"
 import { CredentialsDropdown } from '@/features/credentials/components/CredentialsDropdown'
 import { TextInput } from '@/components/inputs'
 import { useWorkspace } from '@/features/workspace/WorkspaceProvider'
@@ -100,7 +101,7 @@ export const PaymentSettings = ({ options, onOptionsChange }: Props) => {
       ...options,
       additionalInformation: { ...options.additionalInformation, address },
     })
-
+  console.log("options provider", options.provider );
   return (
     <Stack spacing={4}>
       <Stack>
@@ -115,12 +116,14 @@ export const PaymentSettings = ({ options, onOptionsChange }: Props) => {
         <Text>Account:</Text>
         {workspace && (
           <CredentialsDropdown
-            type="stripe"
+            // type="stripe"
+            type={ options.provider == "Razorpay" ? "razorpay" : "stripe" }
             workspaceId={workspace.id}
             currentCredentialsId={options.credentialsId}
             onCredentialsSelect={updateCredentials}
             onCreateNewClick={onOpen}
-            credentialsName="Stripe account"
+            // credentialsName="Stripe account"
+            credentialsName={ options.provider == "Razorpay" ? "Razorpay account" : "Stripe account" }
           />
         )}
       </Stack>
@@ -196,12 +199,22 @@ export const PaymentSettings = ({ options, onOptionsChange }: Props) => {
           </AccordionPanel>
         </AccordionItem>
       </Accordion>
-
-      <StripeConfigModal
+       {  options.provider == "Razorpay" ? (
+         <RazorPayConfigModal
+         type={ "razorpay"}
+         isOpen={isOpen}
+         onClose={onClose}
+         onNewCredentials={updateCredentials}
+         />
+       ) : (
+<StripeConfigModal
+        type={ "stripe" }
         isOpen={isOpen}
         onClose={onClose}
         onNewCredentials={updateCredentials}
       />
+       )  }
+      
     </Stack>
   )
 }

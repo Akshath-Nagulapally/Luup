@@ -42,6 +42,7 @@ export const executeGroup = async (
     firstBubbleWasStreamed,
   }: ContextProps
 ): Promise<ChatReply & { newSessionState: SessionState }> => {
+  console.log("entered execute group");
   const messages: ChatReply['messages'] = currentReply?.messages ?? []
   let clientSideActions: ChatReply['clientSideActions'] =
     currentReply?.clientSideActions
@@ -67,8 +68,23 @@ export const executeGroup = async (
       lastBubbleBlockId = block.id
       continue
     }
-
-    if (isInputBlock(block))
+   console.log("before input block input condition");
+    if (isInputBlock(block)) {
+      console.log("yooooo");
+      console.log( parseInput(newSessionState)(block) );
+      console.log("heee", JSON.stringify({
+        messages,
+        input: await parseInput(newSessionState)(block),
+        newSessionState: {
+          ...newSessionState,
+          currentBlock: {
+            groupId: group.id,
+            blockId: block.id,
+          },
+        },
+        clientSideActions,
+        logs,
+      })  );
       return {
         messages,
         input: await parseInput(newSessionState)(block),
@@ -82,6 +98,21 @@ export const executeGroup = async (
         clientSideActions,
         logs,
       }
+    }
+      // return {
+      //   messages,
+      //   input: await parseInput(newSessionState)(block),
+      //   newSessionState: {
+      //     ...newSessionState,
+      //     currentBlock: {
+      //       groupId: group.id,
+      //       blockId: block.id,
+      //     },
+      //   },
+      //   clientSideActions,
+      //   logs,
+      // }
+      console.log("not reaching here");
     const executionResponse = isLogicBlock(block)
       ? await executeLogic(newSessionState)(block)
       : isIntegrationBlock(block)
@@ -140,7 +171,7 @@ export const executeGroup = async (
   if (!nextGroup.group) {
     return { messages, newSessionState, clientSideActions, logs }
   }
-
+   console.log("before execute group return");
   return executeGroup(nextGroup.group, {
     version,
     state: newSessionState,

@@ -31,17 +31,18 @@ type Props = {
   
 }
 
-export const StripeConfigModal = ({
+export const RazorPayConfigModal = ({
   isOpen,
   onNewCredentials,
   onClose,
+ 
 }: Props) => {
   const { user } = useUser()
   const { workspace } = useWorkspace()
   const [isCreating, setIsCreating] = useState(false)
   const { showToast } = useToast()
   const [stripeConfig, setStripeConfig] = useState<
-    StripeCredentials['data']  & { name: string }
+    RazorpayCredentials['data']  & { name: string }
   >({
     name: '',
     live: { publicKey: '', secretKey: '' },
@@ -114,7 +115,7 @@ export const StripeConfigModal = ({
           },
         },
         name: stripeConfig.name,
-        type: 'stripe',
+        type: "razorpay",
         workspaceId: workspace.id,
       },
     })
@@ -123,7 +124,7 @@ export const StripeConfigModal = ({
     <Modal isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Connect  Stripe  account</ModalHeader>
+        <ModalHeader>Connect Razorpay account</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <Stack as="form" spacing={4}>
@@ -145,13 +146,13 @@ export const StripeConfigModal = ({
               <HStack>
                 <TextInput
                   onChange={handleTestPublicKeyChange}
-                  placeholder="pk_test_..."
+                  placeholder="key id..."
                   withVariableButton={false}
                   debounceTimeout={0}
                 />
                 <TextInput
                   onChange={handleTestSecretKeyChange}
-                  placeholder="sk_test_..."
+                  placeholder="key secret..."
                   withVariableButton={false}
                   debounceTimeout={0}
                 />
@@ -163,7 +164,7 @@ export const StripeConfigModal = ({
                 <FormControl>
                   <TextInput
                     onChange={handlePublicKeyChange}
-                    placeholder="pk_live_..."
+                    placeholder="key id..."
                     withVariableButton={false}
                     debounceTimeout={0}
                   />
@@ -171,7 +172,7 @@ export const StripeConfigModal = ({
                 <FormControl>
                   <TextInput
                     onChange={handleSecretKeyChange}
-                    placeholder="sk_live_..."
+                    placeholder="key secret..."
                     withVariableButton={false}
                     debounceTimeout={0}
                   />
@@ -179,13 +180,13 @@ export const StripeConfigModal = ({
               </HStack>
             </Stack>
 
-            <Text>
+            {/* <Text>
               (You can find your keys{' '}
               <TextLink href="https://dashboard.stripe.com/apikeys" isExternal>
                 here
               </TextLink>
               )
-            </Text>
+            </Text> */}
           </Stack>
         </ModalBody>
 

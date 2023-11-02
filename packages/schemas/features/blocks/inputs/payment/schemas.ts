@@ -75,6 +75,24 @@ export const stripeCredentialsSchema = z
   })
   .merge(credentialsBaseSchema)
 
+
+export const razorpayCredentialsSchema = z
+  .object({
+    type: z.literal('razorpay'),
+    data: z.object({
+      live: z.object({
+        secretKey: z.string(),
+        publicKey: z.string(),
+      }),
+      test: z.object({
+        secretKey: z.string().optional(),
+        publicKey: z.string().optional(),
+      }),
+    }),
+  })
+  .merge(credentialsBaseSchema)  
+
+
 export const defaultPaymentInputOptions: PaymentInputOptions = {
   provider: PaymentProvider.STRIPE,
   labels: { button: 'Pay', success: 'Success' },
@@ -88,6 +106,7 @@ export type PaymentInputRuntimeOptions = z.infer<
   typeof paymentInputRuntimeOptionsSchema
 >
 export type StripeCredentials = z.infer<typeof stripeCredentialsSchema>
+export type RazorpayCredentials = z.infer<typeof razorpayCredentialsSchema>
 export type PaymentAddress = NonNullable<
   PaymentInputOptions['additionalInformation']
 >['address']

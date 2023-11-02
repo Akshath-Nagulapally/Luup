@@ -184,6 +184,7 @@ export const sendMessageV2 = publicProcedure
           clientSideActions,
         }
       } else {
+        console.log("entered elsee after continue bot flow v2 send message start")
         const {
           messages,
           input,
@@ -192,7 +193,7 @@ export const sendMessageV2 = publicProcedure
           logs,
           lastMessageNewFormat,
         } = await continueBotFlow(message, { version: 2, state: session.state })
-
+        console.log("entered elsee after continue bot flow v2 send message end")
         const allLogs = clientLogs ? [...(logs ?? []), ...clientLogs] : logs
 
         if (newSessionState)

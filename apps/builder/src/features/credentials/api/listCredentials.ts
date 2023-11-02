@@ -1,7 +1,7 @@
 import prisma from '@typebot.io/lib/prisma'
 import { authenticatedProcedure } from '@/helpers/server/trpc'
 import { TRPCError } from '@trpc/server'
-import { stripeCredentialsSchema } from '@typebot.io/schemas/features/blocks/inputs/payment/schemas'
+import { stripeCredentialsSchema , razorpayCredentialsSchema } from '@typebot.io/schemas/features/blocks/inputs/payment/schemas'
 import { googleSheetsCredentialsSchema } from '@typebot.io/schemas/features/blocks/integrations/googleSheets/schemas'
 import { openAICredentialsSchema } from '@typebot.io/schemas/features/blocks/integrations/openai'
 import { smtpCredentialsSchema } from '@typebot.io/schemas/features/blocks/integrations/sendEmail'
@@ -28,7 +28,8 @@ export const listCredentials = authenticatedProcedure
         .or(googleSheetsCredentialsSchema.shape.type)
         .or(openAICredentialsSchema.shape.type)
         .or(whatsAppCredentialsSchema.shape.type)
-        .or(zemanticAiCredentialsSchema.shape.type),
+        .or(zemanticAiCredentialsSchema.shape.type)
+        .or(razorpayCredentialsSchema.shape.type),
     })
   )
   .output(
