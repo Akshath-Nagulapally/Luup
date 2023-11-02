@@ -10,7 +10,7 @@ import {
   FormControl,
   FormLabel,
   Stack,
-  Text,
+  
   HStack,
 } from '@chakra-ui/react'
 import React, { useState } from 'react'
@@ -18,8 +18,8 @@ import { useWorkspace } from '@/features/workspace/WorkspaceProvider'
 import { useToast } from '@/hooks/useToast'
 import { TextInput } from '@/components/inputs'
 import { MoreInfoTooltip } from '@/components/MoreInfoTooltip'
-import { TextLink } from '@/components/TextLink'
-import { StripeCredentials , RazorpayCredentials } from '@typebot.io/schemas'
+// import { TextLink } from '@/components/TextLink'
+import {  RazorpayCredentials } from '@typebot.io/schemas'
 import { trpc } from '@/lib/trpc'
 import { isNotEmpty } from '@typebot.io/lib'
 import { useUser } from '@/features/account/hooks/useUser'

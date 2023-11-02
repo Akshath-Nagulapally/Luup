@@ -201,14 +201,14 @@ export const PaymentSettings = ({ options, onOptionsChange }: Props) => {
       </Accordion>
        {  options.provider == "Razorpay" ? (
          <RazorPayConfigModal
-         type={ "razorpay"}
+         
          isOpen={isOpen}
          onClose={onClose}
          onNewCredentials={updateCredentials}
          />
        ) : (
 <StripeConfigModal
-        type={ "stripe" }
+       
         isOpen={isOpen}
         onClose={onClose}
         onNewCredentials={updateCredentials}
