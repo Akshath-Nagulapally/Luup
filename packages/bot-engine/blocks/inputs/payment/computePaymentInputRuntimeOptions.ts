@@ -96,16 +96,19 @@ export const computePaymentInputRuntimeOptions =
       receipt: parseVariables(variables)(options.additionalInformation?.email),
       // Add other relevant details
     };
+    console.log("before razorpay order create");
     // @ts-ignore
-    const order = await razorpay.orders.create(razorpayOrderData);
+     const order = await razorpay.orders.create(razorpayOrderData);
+     console.log("razorpay order",order);
      // @ts-ignore
     if (!order.id) {
+      console.log("could not create order");
       throw new TRPCError({
         code: 'BAD_REQUEST',
         message: 'Could not create Razorpay order',
       });
     }
-
+    
     const priceFormatter = new Intl.NumberFormat(
       options.currency === 'EUR' ? 'fr-FR' : undefined,
       {
@@ -113,6 +116,7 @@ export const computePaymentInputRuntimeOptions =
         currency: options.currency,
       }
     )
+    console.log("its the endddd");
     // console.log(" payment Intent secret for razorpay",order.id );
     return {
       paymentIntentSecret: order.id,
