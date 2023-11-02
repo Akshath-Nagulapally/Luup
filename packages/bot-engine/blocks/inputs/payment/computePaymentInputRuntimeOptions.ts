@@ -93,9 +93,10 @@ export const computePaymentInputRuntimeOptions =
     const razorpayOrderData = {
       amount, // Amount in paise or smallest currency unit
       currency: options.currency,
-      receipt: parseVariables(variables)(options.additionalInformation?.email),
+      // receipt: parseVariables(variables)(options.additionalInformation?.email),
       // Add other relevant details
     };
+    // receipt: parseVariables(variables)(options.additionalInformation?.email),
     console.log("before razorpay order create", razorpayOrderData );
     // @ts-ignore
      const order = await razorpay.orders.create(razorpayOrderData);
