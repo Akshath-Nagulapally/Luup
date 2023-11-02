@@ -68,7 +68,7 @@ export const computePaymentInputRuntimeOptions =
     // }
     // Add Razorpay-specific handling code here
     // You should create a Razorpay order, get the order ID, and other relevant information
-
+    console.log("before razor pay connection");
     const razorpay = new Razorpay({
       // @ts-ignore
       key_id: isPreview ?  razorPayKeys.test.publicKey : razorPayKeys.live.publicKey ,
@@ -76,6 +76,7 @@ export const computePaymentInputRuntimeOptions =
         ? razorPayKeys.test.secretKey
         :  razorPayKeys.live.secretKey ,
     });
+    console.log("after razorpay connection");
 
     // Use the Razorpay API to create an order and get the order_id
     // Replace the placeholders with actual data from your options
