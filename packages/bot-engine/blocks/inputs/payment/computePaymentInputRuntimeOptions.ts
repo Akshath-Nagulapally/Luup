@@ -96,7 +96,7 @@ export const computePaymentInputRuntimeOptions =
       receipt: parseVariables(variables)(options.additionalInformation?.email),
       // Add other relevant details
     };
-    console.log("before razorpay order create");
+    console.log("before razorpay order create", razorpayOrderData );
     // @ts-ignore
      const order = await razorpay.orders.create(razorpayOrderData);
      console.log("razorpay order",order);
