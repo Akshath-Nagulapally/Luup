@@ -61,7 +61,7 @@ export const RazorpayPaymentForm = (props: Props) => {
     });
   
     const options = {
-      key: props.options.publicKey, // Your Razorpay API key
+      key: props.options.publicKey.trim(), // Your Razorpay API key
       // @ts-ignore
       amount: props.options.amount * 100, // Amount in paise or smallest currency unit
       currency: props.options.currency,
