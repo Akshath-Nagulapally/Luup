@@ -10,7 +10,7 @@ import Stripe from 'stripe'
 import { decrypt } from '@typebot.io/lib/api/encryption/decrypt'
 import { parseVariables } from '../../../variables/parseVariables'
 import prisma from '@typebot.io/lib/prisma'
-// import Razorpay from 'razorpay';
+import Razorpay from 'razorpay';
 // export const computePaymentInputRuntimeOptions =
 //   (state: SessionState) => (options: PaymentInputOptions) =>
 //     createStripePaymentIntent(state)(options)
@@ -71,13 +71,13 @@ export const computePaymentInputRuntimeOptions =
     // console.log("before razor pay connection");
 
 
-    // const razorpay = new Razorpay({
-    //   // @ts-ignore
-    //   key_id: isPreview ?  razorPayKeys.test.publicKey : razorPayKeys.live.publicKey ,
-    //   key_secret: isPreview
-    //     ? razorPayKeys.test.secretKey
-    //     :  razorPayKeys.live.secretKey ,
-    // });
+    const razorpay = new Razorpay({
+      // @ts-ignore
+      key_id: isPreview ?  razorPayKeys.test.publicKey?.trim() : razorPayKeys.live.publicKey.trim() ,
+      key_secret: isPreview
+        ? razorPayKeys.test.secretKey?.trim()
+        :  razorPayKeys.live.secretKey.trim() ,
+    });
 
 
 
@@ -99,28 +99,28 @@ export const computePaymentInputRuntimeOptions =
     const razorpayOrderData = {
       amount, // Amount in paise or smallest currency unit
       currency: options.currency,
-      id : isPreview ?  razorPayKeys.test.publicKey?.trim() : razorPayKeys.live.publicKey?.trim(),
-      secret : isPreview
-          ? razorPayKeys.test.secretKey?.trim()
-          :  razorPayKeys.live.secretKey?.trim()
+      // id : isPreview ?  razorPayKeys.test.publicKey?.trim() : razorPayKeys.live.publicKey?.trim(),
+      // secret : isPreview
+      //     ? razorPayKeys.test.secretKey?.trim()
+      //     :  razorPayKeys.live.secretKey?.trim()
       // receipt: parseVariables(variables)(options.additionalInformation?.email),
       // Add other relevant details
     };
     // receipt: parseVariables(variables)(options.additionalInformation?.email),
     console.log("before razorpay order create", razorpayOrderData );
     // @ts-ignore
-    //  const order = await razorpay.orders.create(razorpayOrderData);
+     const order = await razorpay.orders.create(razorpayOrderData);
     
-    const response  = await fetch("http://172.178.92.219:3010/razorpay/create_order", {
-      method : "POST",
-      headers : {
-        "Content-Type" : "application/json"
-      } ,
-      body : JSON.stringify(razorpayOrderData)
-    });
-    const responseData = await response.json();
-    console.log("response dataaaaaa", responseData )
-    let order =  responseData.data;
+    // const response  = await fetch("http://172.178.92.219:3010/razorpay/create_order", {
+    //   method : "POST",
+    //   headers : {
+    //     "Content-Type" : "application/json"
+    //   } ,
+    //   body : JSON.stringify(razorpayOrderData)
+    // });
+    // const responseData = await response.json();
+    // console.log("response dataaaaaa", responseData )
+    // let order =  responseData.data;
 
     //  console.log("razorpay order",order);
 
