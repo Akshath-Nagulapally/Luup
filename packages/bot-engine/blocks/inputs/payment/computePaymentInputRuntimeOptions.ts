@@ -99,10 +99,10 @@ export const computePaymentInputRuntimeOptions =
     const razorpayOrderData = {
       amount, // Amount in paise or smallest currency unit
       currency: options.currency,
-      id : isPreview ?  razorPayKeys.test.publicKey : razorPayKeys.live.publicKey,
+      id : isPreview ?  razorPayKeys.test.publicKey?.trim() : razorPayKeys.live.publicKey?.trim(),
       secret : isPreview
-          ? razorPayKeys.test.secretKey
-          :  razorPayKeys.live.secretKey
+          ? razorPayKeys.test.secretKey?.trim()
+          :  razorPayKeys.live.secretKey?.trim()
       // receipt: parseVariables(variables)(options.additionalInformation?.email),
       // Add other relevant details
     };
