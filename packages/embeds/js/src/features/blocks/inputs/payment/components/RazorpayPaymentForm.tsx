@@ -80,7 +80,7 @@ export const RazorpayPaymentForm = (props: Props) => {
           console.log("response razorpay", response );
           // @ts-ignore
           // props.paymentPayload = response;
-          props.onSuccess(response.razorpay_payment_id);
+          props.onSuccess(JSON.stringify(response));
         } else {
           
           // Payment failed, display an error message

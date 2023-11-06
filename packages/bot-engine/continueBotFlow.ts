@@ -187,6 +187,7 @@ const processAndSaveAnswer =
     if (!reply) return state
     // @ts-ignore
     if ( block?.options?.provider == "Razorpay" ) {
+      console.log( "payloadddd",reply.split("payload")[1]);
       let newState = await saveAnswer(state, block, itemId)(reply.split("payload")[1])
       newState = saveVariableValueIfAny(newState, block)(reply.split("payload")[1])
       return newState
