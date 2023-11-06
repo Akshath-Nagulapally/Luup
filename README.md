@@ -12,3 +12,15 @@ pnpm i
 pnpm dev
 visit localhost:3000/
 
+
+// deploying to server 
+
+run pnpm i at root
+run pnpm turbo build --filter=builder... 
+run pnpm turbo build --filter=viewer...
+
+go to apps/builder 
+create new pm2 process to create next build
+go to apps/viewer 
+create new pm2 process to create next build 
+
