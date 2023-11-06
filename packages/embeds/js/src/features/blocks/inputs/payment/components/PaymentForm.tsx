@@ -8,7 +8,7 @@ import { RazorpayPaymentForm  } from "./RazorpayPaymentForm";
 type Props = {
   context: BotContext
   options: PaymentInputOptions & RuntimeOptions
-  onSuccess: () => void
+  onSuccess: () => any 
 }
 
 export const PaymentForm = (props: Props) => (

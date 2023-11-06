@@ -121,8 +121,11 @@ export const continueBotFlow = async (
       itemId
     )(formattedReply)
   }
-  console.log("after isInput block....")
-
+  console.log("after isInput block....", formattedReply );
+  // @ts-ignore
+  if ( block?.options?.provider == "Razorpay" ) {
+      formattedReply = formattedReply?.split("payload")[0]
+  }
   const groupHasMoreBlocks = blockIndex < group.blocks.length - 1
 
   const nextEdgeId = getOutgoingEdgeId(newSessionState)(block, formattedReply)
@@ -170,6 +173,7 @@ export const continueBotFlow = async (
     firstBubbleWasStreamed,
   })
   console.log("chat reply",JSON.stringify(chatReply));
+  console.log("last formatted message", formattedReply !== reply ? formattedReply : undefined );
   return {
     ...chatReply,
     lastMessageNewFormat: formattedReply !== reply ? formattedReply : undefined,
@@ -179,10 +183,20 @@ export const continueBotFlow = async (
 const processAndSaveAnswer =
   (state: SessionState, block: InputBlock, itemId?: string) =>
   async (reply: string | undefined): Promise<SessionState> => {
+    console.log("block type",block);
     if (!reply) return state
-    let newState = await saveAnswer(state, block, itemId)(reply)
-    newState = saveVariableValueIfAny(newState, block)(reply)
-    return newState
+    // @ts-ignore
+    if ( block?.options?.provider == "Razorpay" ) {
+      let newState = await saveAnswer(state, block, itemId)(reply.split("payload")[1])
+      newState = saveVariableValueIfAny(newState, block)(reply.split("payload")[1])
+      return newState
+    } else {
+      let newState = await saveAnswer(state, block, itemId)(reply)
+      newState = saveVariableValueIfAny(newState, block)(reply)
+      return newState
+    }
+    
+  
   }
 
 const saveVariableValueIfAny =
@@ -372,6 +386,7 @@ const parseReply =
         if (!inputValue) return { status: 'fail' }
         if (inputValue === 'fail') return { status: 'fail' }
         return { status: 'success', reply: inputValue }
+        // return { status : 'success' , reply : inputValue.includes("payload") ?  inputValue.split("payload")[0] : inputValue }
       }
       case InputBlockType.RATING: {
         if (!inputValue) return { status: 'fail' }

@@ -9,12 +9,15 @@ import {
   AccordionIcon,
   AccordionItem,
   AccordionPanel,
+  FormLabel,
 } from '@chakra-ui/react'
 import { DropdownList } from '@/components/DropdownList'
+import { VariableSearchInput } from '@/components/inputs/VariableSearchInput'
 import {
   PaymentAddress,
   PaymentInputOptions,
   PaymentProvider,
+  Variable
 } from '@typebot.io/schemas'
 import React, { ChangeEvent } from 'react'
 import { currencies } from '../currencies'
@@ -33,7 +36,8 @@ type Props = {
 export const PaymentSettings = ({ options, onOptionsChange }: Props) => {
   const { workspace } = useWorkspace()
   const { isOpen, onOpen, onClose } = useDisclosure()
-
+  const handleVariableChange = (variable?: Variable) =>
+  onOptionsChange({ ...options, variableId: variable?.id })
   const updateProvider = (provider: PaymentProvider) => {
     onOptionsChange({
       ...options,
@@ -161,6 +165,15 @@ export const PaymentSettings = ({ options, onOptionsChange }: Props) => {
         defaultValue={options.labels.success ?? 'Success'}
         placeholder="Success"
       />
+      <Stack>
+        <FormLabel mb="0" htmlFor="variable">
+          Save payload in a variable:
+        </FormLabel>
+        <VariableSearchInput
+          initialVariableId={options.variableId}
+          onSelectVariable={handleVariableChange}
+        />
+      </Stack>
       <Accordion allowToggle>
         <AccordionItem>
           <AccordionButton justifyContent="space-between">
@@ -196,6 +209,7 @@ export const PaymentSettings = ({ options, onOptionsChange }: Props) => {
               address={options.additionalInformation?.address}
               onAddressChange={updateAddress}
             />
+            
           </AccordionPanel>
         </AccordionItem>
       </Accordion>

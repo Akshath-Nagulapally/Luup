@@ -75,7 +75,12 @@ export const RazorpayPaymentForm = (props: Props) => {
   
         if (response.razorpay_payment_id) {
           // Payment successful, call onSuccess
-          props.onSuccess();
+          console.log("typebot context", props.context );
+          console.log("optionsss", props.options );
+          console.log("response razorpay", response );
+          // @ts-ignore
+          // props.paymentPayload = response;
+          props.onSuccess(response.razorpay_payment_id);
         } else {
           
           // Payment failed, display an error message

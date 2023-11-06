@@ -119,13 +119,34 @@ const Input = (props: {
   const getPrefilledValue = () =>
     props.isInputPrefillEnabled ? props.block.prefilledValue : undefined
 
-  const submitPaymentSuccess = () =>
-    props.onSubmit({
+  // const submitPaymentSuccess = () =>
+  //   props.onSubmit({
+  //     value:
+  //       (props.block.options as PaymentInputOptions).labels.success ??
+  //       'Success',
+  //   })
+  const submitPaymentSuccess = (opp : any ) => {
+    console.log("props blocks optionssss", props.block.options , opp );
+    // @ts-ignore
+    if (props.block.options.provider == "Razorpay"  ) {
+     console.log("entered razorpay");
+     props.onSubmit({
       value:
-        (props.block.options as PaymentInputOptions).labels.success ??
-        'Success',
+        `${(props.block.options as PaymentInputOptions).labels.success} payload ${opp}` ??
+        `Success payload ${opp}`,
     })
+    } else {
+      console.log("entered stripe");
+      props.onSubmit({
+        value:
+          (props.block.options as PaymentInputOptions).labels.success ??
+          'Success',
+      })
+    }
+    
 
+  }
+    
   return (
     <Switch>
       <Match when={props.block.type === InputBlockType.TEXT}>

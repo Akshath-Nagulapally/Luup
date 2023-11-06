@@ -43,6 +43,13 @@ export const paymentInputOptionsSchema = optionBaseSchema.merge(
     currency: z.string(),
     amount: z.string().optional(),
     retryMessageContent: z.string().optional(),
+    paymentPayload: z
+      .object({
+        razorpay_order_id: z.string().optional(),
+        razorpay_payment_id: z.string().optional(),
+        razorpay_signature: z.string().optional(),
+      })
+      .optional(),
   })
 )
 
@@ -75,7 +82,6 @@ export const stripeCredentialsSchema = z
   })
   .merge(credentialsBaseSchema)
 
-
 export const razorpayCredentialsSchema = z
   .object({
     type: z.literal('razorpay'),
@@ -90,8 +96,7 @@ export const razorpayCredentialsSchema = z
       }),
     }),
   })
-  .merge(credentialsBaseSchema)  
-
+  .merge(credentialsBaseSchema)
 
 export const defaultPaymentInputOptions: PaymentInputOptions = {
   provider: PaymentProvider.STRIPE,
