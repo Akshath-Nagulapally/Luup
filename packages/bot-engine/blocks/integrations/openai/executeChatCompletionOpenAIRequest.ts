@@ -27,6 +27,7 @@ export const executeChatCompletionOpenAIRequest = async ({
   chatCompletion?: OpenAI.Chat.Completions.ChatCompletion
   logs?: ChatReply['logs']
 }> => {
+  console.log("this is getting called");
   const logs: ChatReply['logs'] = currentLogs
   if (messages.length === 0) return { logs }
   try {
@@ -48,9 +49,10 @@ export const executeChatCompletionOpenAIRequest = async ({
     const chatCompletion = await openai.chat.completions.create({
       model,
       messages,
-      temperature,
+      temperature
     })
-
+    console.log("chat completion");
+   // @ts-ignore
     return { chatCompletion, logs }
   } catch (error) {
     if (error instanceof HTTPError) {
@@ -80,7 +82,7 @@ export const executeChatCompletionOpenAIRequest = async ({
             'Max tokens limit reached, automatically trimming first message.',
         }
         logs.push(log)
-
+        
         return executeChatCompletionOpenAIRequest({
           apiKey,
           model,

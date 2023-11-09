@@ -60,7 +60,7 @@ type Props = {
 }
 
 export const ConversationContainer = (props: Props) => {
-  
+  console.log("conversation container loaded");
   let chatContainer: HTMLDivElement | undefined
   const [chatChunks, setChatChunks] = createSignal<ChatChunkType[]>([
     {
@@ -121,6 +121,7 @@ export const ConversationContainer = (props: Props) => {
           streamingMessageId: id,
         },
       ])
+    console.log("stream message getting called",id , message );
     setStreamingMessage({ id, content: message })
   }
 
@@ -196,6 +197,7 @@ export const ConversationContainer = (props: Props) => {
           'webhookToExecute' in action
         )
           setIsSending(true)
+        console.log("entereddd actions for blokckk");  
         const response = await executeClientSideAction({
           clientSideAction: action,
           context: {
@@ -253,6 +255,7 @@ export const ConversationContainer = (props: Props) => {
           'webhookToExecute' in action
         )
           setIsSending(true)
+        console.log("handle new bubble displayed");  
         const response = await executeClientSideAction({
           clientSideAction: action,
           context: {

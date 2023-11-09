@@ -19,6 +19,7 @@ export const streamChat =
     }: { onMessageStream?: (props: { id: string; message: string }) => void }
   ): Promise<{ message?: string; error?: object }> => {
     try {
+      console.log("stream chat called");
       abortController = new AbortController()
 
       const apiHost = context.apiHost

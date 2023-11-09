@@ -80,7 +80,7 @@ export const createChatCompletionOpenAI = async (
   )?.name
 
   if (
-    isPlaneteScale() &&
+    // isPlaneteScale() &&
     isCredentialsV2(credentials) &&
     newSessionState.isStreamEnabled &&
     !newSessionState.whatsApp &&

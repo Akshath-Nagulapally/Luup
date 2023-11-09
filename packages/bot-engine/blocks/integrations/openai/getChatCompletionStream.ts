@@ -1,4 +1,5 @@
-import { Connection } from '@planetscale/database'
+// import { Connection } from '@planetscale/database'
+import { PrismaClient } from '@typebot.io/prisma'
 import { decryptV2 } from '@typebot.io/lib/api/encryption/decryptV2'
 import { isNotEmpty } from '@typebot.io/lib/utils'
 import {
@@ -11,18 +12,23 @@ import { parseVariableNumber } from '../../../variables/parseVariableNumber'
 import { ClientOptions, OpenAI } from 'openai'
 
 export const getChatCompletionStream =
-  (conn: Connection) =>
+  // (conn: Connection) =>
+  ( prisma : PrismaClient ) =>
   async (
     state: SessionState,
     options: ChatCompletionOpenAIOptions,
     messages: OpenAI.Chat.ChatCompletionMessageParam[]
   ) => {
     if (!options.credentialsId) return
-    const credentials = (
-      await conn.execute('select data, iv from Credentials where id=?', [
-        options.credentialsId,
-      ])
-    ).rows.at(0) as { data: string; iv: string } | undefined
+    const credentials = await prisma.credentials.findUnique({
+      where: { id: options.credentialsId },
+      select: { data: true, iv: true },
+    });
+    // const credentials = (
+    //   await conn.execute('select data, iv from Credentials where id=?', [
+    //     options.credentialsId,
+    //   ])
+    // ).rows.at(0) as { data: string; iv: string } | undefined
     if (!credentials) {
       console.error('Could not find credentials in database')
       return
